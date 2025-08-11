@@ -1,0 +1,45 @@
+//VARIABLES
+$font1: 'Open Sans', Arial, sans-serif;
+$font2: 'Roboto', sans-serif;
+$max-container: 1200px;
+
+// COLORES
+$primary:#0D6EFD;
+$secondary:#6C757D;
+$success: #198754;
+$info:#0DCAF0;
+$warning:#FFC107;
+$danger:#DC3545;
+$light:#F8F9FA;
+$dark:#212529;
+$white:#FFF;
+$black:#000;
+$indigo:#6610F2;
+$gray:#6C757D;
+
+$colores:(
+"primary": $primary,
+"secondary": $secondary,
+"success": $success,
+"info": $info,
+"warning": $warning,
+"danger": $danger,
+"light": $light,
+"dark": $dark,
+"white": $white,
+"black": $black,
+"indigo": $indigo,
+"gray": $gray
+);
+
+$grays: (
+    100: #f8f9fa,
+    200: #e9ecef,
+    300: #dee2e6,
+    400: #ced4da,
+    500: #abd5bd,
+    600: #6c757d,
+    700: #495057,
+    800: #343a40,
+    900: #212529,
+);

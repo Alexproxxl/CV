@@ -1,0 +1,107 @@
+// GlOBALES
+
+@import 'global/variables';
+@import 'global/fonts';
+@import 'global/normalize';
+@import 'global/mediaquery';
+//el error no deja pasar de esta parte de codigo, posible error de sintaxis en las variables
+
+
+
+//SECTIONS
+@import 'sections/generales';
+@import 'sections/texto';
+@import 'sections/background';
+@import 'sections/grid';
+@import 'sections/posicionamientos';
+@import 'sections/helpers';
+@import 'sections/componentes';
+
+
+.main{
+    position: absolute;
+    height: 20%;
+    width: 35% !important;
+    background: rgb(201, 199, 199);
+    transition: all .5s;
+
+    &:hover{
+
+        position: absolute;
+        height: 85%;
+        width: 50%;
+        background: rgb(201, 199, 199);
+
+        *.info, .info-2{
+            display: block !important;
+        }
+        *.footer-perso{
+            display: block !important;
+        }
+    }
+}
+.img-container{
+    position: relative;
+    width: 100%;
+    img{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+}
+
+.footer-perso{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    display: none;
+
+    div{
+        width: 300px;
+        
+        a, span{
+            height: 40px;
+            width: 40px;
+            color: black;
+            font-size: 40px;
+        }
+    }
+
+    span{
+        cursor: pointer;
+    }
+}
+
+.card-contacto{
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40%;
+        width: 30%;
+        background: rgb(163, 163, 163);
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($color: #cacaca, $alpha: 0.6);
+    }
+}
