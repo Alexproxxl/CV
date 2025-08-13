@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Àlex Cuadrado CV</title>
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- Iconos / JS -->
     <script src="https://kit.fontawesome.com/376dc2c751.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body class="bg-gray-800 color-white flex items-center jcontent-center" >
-
     <div class="grid col-2 main w-sm-90" id="card-general">
-
+        
+        <!-- HEADER / INICIO -->
         <div class="img-container span-1 flex items-center jcontent-center" style="height: 160px;">
             <img src="img/logo.jpg" alt="" style="align-self: center center;">
         </div>
@@ -23,9 +27,10 @@
         </div>
 
 
-
+        <!-- Información 1 -->
         <div class="span-1 info ms-3 me-1" style="display: none;">           
             <div>
+                <!-- IDIOMAS -->
                 <div>
                     <ul>
                         <h4>Idiomas</h4>
@@ -55,6 +60,7 @@
                         </div>
                     </ul>
                 </div>
+                <!-- SOBRE MI -->
                 <div class="sobremi">
                     <h5>Sobre mí:</h5>
                     <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "No se que mierda poner killo"</p>
@@ -63,7 +69,7 @@
         </div>
 
     
-        <!-- Copia de seguridad en DISCORD -->
+        <!-- Información 2 -->
         <div class="span-1 info-2" style="display: none;">
             <div class="grid ms-2 info-2-content" id="item-container">
                 <div class="item-1">
@@ -86,6 +92,7 @@
             </div>
         </div>
 
+        <!-- Menú Sociales -->
         <div class="footer-perso span-2" style="position: relative;">
             <div class="flex jcontent-between " style="height: 100%; width: 100%; position: absolute;">
                 <span href="" class="fa-solid fa-address-card ps-5" id="info-contacto" onclick="contacto()"></span>
@@ -95,6 +102,7 @@
         </div>
     </div>
 
+    <!-- Contacto - Desplegable -->
     <div class="card-contacto" id="card-contacto" onclick="salir()">
         <div class="content">
             <h3 class="my-3">Datos de contacto personal</h3>
