@@ -97,7 +97,19 @@ ul{
 }
 
 @media screen and (max-width: 540px){
+<<<<<<< HEAD
     .main{
+=======
+    body{
+        position: absolute;
+        height: 100vh !important; 
+    }
+    .progress{
+        width: 50% !important;        
+    }
+    .main{
+        position: relative !important;
+>>>>>>> rama-responsive
         height: 100% !important;
         width: 100% !important;
     }
