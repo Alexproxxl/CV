@@ -97,8 +97,8 @@ ul{
 }
 
 @media screen and (max-width: 540px){
-    .main:hover{
-        height: 100%;
+    .main{
+        height: 100% !important;
         width: 100% !important;
     }
     .sobremi{
@@ -107,5 +107,12 @@ ul{
 
     .content{
         width: 100% !important;
+    }
+
+    *.info, .info-2{
+        display: block !important;
+    }
+    *.footer-perso{
+        display: block !important;
     }
 }
