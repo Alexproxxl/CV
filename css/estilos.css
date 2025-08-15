@@ -29,11 +29,6 @@ ul{
     padding: 0 !important;
 }
 
-
-.info, .info-2{
-    position: relative;
-}
-
 .info-2-content{
     grid-template-columns: 1;
 }
@@ -97,9 +92,6 @@ ul{
 }
 
 @media screen and (max-width: 540px){
-<<<<<<< HEAD
-    .main{
-=======
     body{
         position: absolute;
         height: 100vh !important; 
@@ -109,7 +101,6 @@ ul{
     }
     .main{
         position: relative !important;
->>>>>>> rama-responsive
         height: 100% !important;
         width: 100% !important;
     }
