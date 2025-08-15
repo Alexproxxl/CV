@@ -15,10 +15,10 @@
     <script src="js/script.js"></script>
 </head>
 <body class="bg-gray-800 color-white flex items-center jcontent-center" >
-    <div class="grid col-2 main w-sm-90" id="card-general">
+    <div class="grid col-2 main w-sm-90" id="card-general" style="grid-template-rows: 150px calc(100% - 250px) 70px;">
         
         <!-- HEADER / INICIO -->
-        <div class="img-container span-1 flex items-center jcontent-center" style="height: 160px;">
+        <div class="img-container span-1 flex items-center jcontent-center" style="height: 100%;">
             <img src="img/logo.jpg" alt="" style="align-self: center center;">
         </div>
         <div class="span-1 flex jcontent-center items-center mr-1" style="flex-direction: column; margin-right: 5px; height: 160px;">
@@ -82,11 +82,17 @@
                         <li>Especialización GIT / GitHub</li>
                     </ul>
                 </div>
-                <div class="item-2">
-                    <h4>Experiencia:</h4>
+                <div class="item-2" style="display: flex; overflow: auto; flex-direction: column; max-height: 50%;  border: 1px solid #333333;">
+                    <h4>Competencias:</h4>
                     <ul>
-                        <li>Fujitsu (Tecnico IT)</li>
-                        <li>Pácticas JS</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Paginas CSS</li>
+                        <li>GIT</li>
+                        <li>GitHub</li>
                         <li>Paginas CSS</li>
                     </ul>
                 </div>
@@ -94,7 +100,7 @@
         </div>
 
         <!-- Menú Sociales -->
-        <div class="footer-perso span-2" style="position: relative;">
+        <div class="footer-perso span-2" style="height: 70px; width: 95%; position: relative; bottom: 0;">
             <div class="flex jcontent-between " style="height: 100%; width: 100%; position: absolute;">
                 <p class="ms-3" style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto()"><span href="" class="fa-solid fa-user" ></span>Info. Contacto</p>
 
