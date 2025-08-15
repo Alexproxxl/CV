@@ -29,11 +29,6 @@ ul{
     padding: 0 !important;
 }
 
-.info-2-content{
-    grid-template-columns: 1;
-}
-
-
 @media screen and (max-width: 1604px){
     .main:hover{
         width: 51%;
