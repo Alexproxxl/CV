@@ -15,100 +15,111 @@
     <script src="js/script.js"></script>
 </head>
 <body class="bg-gray-800 color-white flex items-center jcontent-center" >
-    <div class="grid col-2 main w-sm-90" id="card-general" style="grid-template-rows: 150px calc(100% - 250px) 70px;">
+    <div class="main w-sm-90 flex"  style="flex-direction: column;" id="card-general">
         
         <!-- HEADER / INICIO -->
-        <div class="img-container span-1 flex items-center jcontent-center" style="height: 100%;">
-            <img src="img/logo.jpg" alt="" style="align-self: center center;">
-        </div>
-        <div class="span-1 flex jcontent-center items-center mr-1" style="flex-direction: column; margin-right: 5px; height: 160px;">
-            <h2>Àlex Cuadrado</h2>
-            <h4>Web Developer</h4>
-        </div>
-
-
-        <!-- Información 1 -->
-        <div class="span-1 info ms-3 me-1" style="display: none;">           
-            <div>
-                <!-- SOBRE MI -->
-                <div class="sobremi">
-                    <h5>Sobre mí:</h5>
-                    <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "No se que mierda poner killo"</p>
-                </div>
-                
-                <!-- IDIOMAS -->
-                <div>
-                    <ul>
-                        <h4>Idiomas</h4>
-                        <div class="flex jcontent-arround items-center">
-                            <li>Catalá</li>
-                            <div class="progress" style="width: 70%; margin-left: 20px;">
-                                <div class="progress-bar bg-success" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="flex jcontent-arround items-center">
-                            <li>Español</li>
-                            <div class="progress" style="width: 70%; margin-left: 20px;">
-                                <div class="progress-bar bg-success" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="flex jcontent-arround items-center">
-                            <li>Ingles</li>
-                            <div class="progress" style="width: 70%; margin-left: 20px;">
-                                <div class="progress-bar bg-warning" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="flex jcontent-arround items-center">
-                            <li>Italiano</li>
-                            <div class="progress" style="width: 70%; margin-left: 20px;">
-                                <div class="progress-bar bg-danger" style="width: 20%;"></div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
+        <div class="header-main flex jcontent-arround" style="height: 100%; width: 100%; position: relative;">
+            <div class="img-container flex items-center" style="width: 30%;">
+                <img src="img/logo.jpg" alt="">
             </div>
+            <div class="flex jcontent-center items-center mr-1" style="flex-direction: column; margin-right: 5px; width: 70%;">
+                <h2>Àlex Cuadrado</h2>
+                <h4>Web Developer</h4>
+            </div>
+        </div>
+
+
+        <div class="container-info flex jcontent-between pt-3 ps-4" style="flex-direction: row;">
+            <!-- Información 1 -->
+                <div class="info" style="width: 49%; display: none;">
+                    <!-- SOBRE MI -->
+                    <div class="sobremi">
+                        <h5>Sobre mí:</h5>
+                        <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "No se que mierda poner killo"</p>
+                    </div>
+            
+                    <!-- IDIOMAS -->
+                    <div>
+                        <ul>
+                            <h4>Idiomas</h4>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Catalá</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Español</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Ingles</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-warning" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Italiano</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-danger" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Información 2 -->
+                <div class="info-2" style="display: none; width: 49%;">
+                    <div class="ms-2 info-2-content" id="item-container" style="height: 100%;">
+                        <!-- Formación -->
+                        <div class="item-1">
+                            <h4>Formación:</h4>
+                            <ul>
+                                <li>CFGM: Sistemas informaticos</li>
+                                <li>JavaScript TOTAL</li>
+                                <li>Maestria CSS</li>
+                                <li>Especialización GIT / GitHub</li>
+                            </ul>
+                        </div>
+                        <!-- Lista Skills-->
+                        <div class="item-2" style="overflow: auto; max-height: 50%; border: 1px solid #333333; width: 100%;">
+                            <h4>Competencias:</h4>
+                            <ul>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>Bootstrap</li>
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                                <li>Paginas CSS</li>
+                                <li>GIT</li>
+                                <li>GitHub</li>
+                                <li>Paginas CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
         </div>
 
     
-        <!-- Información 2 -->
-        <div class="span-1 info-2" style="display: none;">
-            <div class="grid ms-2 info-2-content" id="item-container">
-                <div class="item-1">
-                    <h4>Formación:</h4>
-                    <ul>
-                        <li>CFGM: Sistemas informaticos</li>
-                        <li>JavaScript TOTAL</li>
-                        <li>Maestria CSS</li>
-                        <li>Especialización GIT / GitHub</li>
-                    </ul>
-                </div>
-                <div class="item-2" style="display: flex; overflow: auto; flex-direction: column; max-height: 50%;  border: 1px solid #333333;">
-                    <h4>Competencias:</h4>
-                    <ul>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>Bootstrap</li>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>Paginas CSS</li>
-                        <li>GIT</li>
-                        <li>GitHub</li>
-                        <li>Paginas CSS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <!-- Menú Sociales -->
-        <div class="footer-perso span-2" style="height: 70px; width: 95%; position: relative; bottom: 0;">
-            <div class="flex jcontent-between " style="height: 100%; width: 100%; position: absolute;">
-                <p class="ms-3" style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto()"><span href="" class="fa-solid fa-user" ></span>Info. Contacto</p>
+        <div class="footer-perso" style="width: 100%;">
+            <div class="flex" style="width: 100%; height: 100%;">
 
-                <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()"><span href="" class="fa-solid fa-info" ></span>Info. Adicional</p>
+                <div class="flex jcontent-arround" style="width: 70%; height: 100%; position: relative;">
+                    <p class="ms-3" style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto()"><span href="" class="fa-solid fa-user" ></span>Info. Contacto</p>
 
-                <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" class="fa-brands fa-linkedin"></a>
+                    <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()"><span href="" class="fa-solid fa-info"></span>Info. Adicional</p>
+                </div>
 
-                <a href="https://github.com/Alexproxxl" class="fa-brands fa-github"></a>
+                <div class="flex jcontent-end" style="width: 30%; height: 100%;">
+                    <div class="flex jcontent-around" style="width: 50%;">
+                        <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" class="fa-brands fa-linkedin"></a>
+                        <a href="https://github.com/Alexproxxl" class="fa-brands fa-github"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
