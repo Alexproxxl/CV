@@ -1,3 +1,24 @@
+//Menu Header
+
+const btnIdiomas = document.getElementById("btn-idiomas");
+const menuIdiomas = document.getElementById("menu-idiomas");
+
+btnIdiomas.addEventListener("click", () => {
+    console.log("Esta pasando algo aquí?");
+    menuIdiomas.toggleAttribute("hidden"); // usa el atributo HTML, no estilos
+  });
+
+
+const paginaActual = window.location.pathname.split("/").pop();
+const icono = document.querySelector("nav ul li a.fa-solid"); // primer <a> con fa-solid
+
+if (paginaActual === "index-light.html") {
+  icono.classList.remove("fa-moon");
+  icono.classList.add("fa-sun");
+} else {
+  icono.classList.remove("fa-sun");
+  icono.classList.add("fa-moon");
+}
 
 
 function contacto() {
@@ -25,3 +46,4 @@ function salir() {
     cardGeneral.style.filter = 'blur(0)';
     console.log('Que esta pasando aquí?');
 }
+
