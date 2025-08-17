@@ -29,6 +29,24 @@ ul{
     padding: 0 !important;
 }
 
+.icono{
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover .submenu{
+    display: block;
+}
+
+
 @media screen and (max-width: 1604px){
     .main:hover{
         width: 51%;

@@ -2617,7 +2617,19 @@ form * input:focus {
   display: block !important;
 }
 .main:hover .header-main {
-  height: 35% !important;
+  position: relative;
+  height: 30% !important;
+}
+.main:hover .header-main::before {
+  content: "";
+  color: red;
+  height: 20px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(50%);
 }
 .main:hover .container-info {
   height: 65% !important;
