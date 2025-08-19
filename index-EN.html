@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Àlex Cuadrado CV</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- Iconos / JS -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/376dc2c751.js" crossorigin="anonymous"></script>
+   
+</head>
+<body class="flex items-center jcontent-center" id="body">
+    <div class="main w-sm-90 flex" style="flex-direction: column;" id="card-general">
+        
+        <!-- HEADER / INICIO -->
+        <div class="header-main flex jcontent-between" style="height: 100%; width: 100%; position: relative;">
+            <!-- Imagen -->
+            <div class="img-container flex items-center" style="width: 25%;">
+                <img src="img/logo.jpg" alt="">
+            </div>
+
+
+            <!-- Nombre / Formación -->
+            <div class="flex jcontent-center items-center mr-1" style="flex-direction: column; margin-right: 5px; width: 50%;">
+                <h2>Àlex Cuadrado</h2>
+                <h4>Web Developer</h4>
+            </div>
+
+
+            <!-- Nav Superior -->
+            <div style="width: 25%;">
+                <nav style="height: 100%;">
+                    <ul class="flex jcontent-between" style="flex-direction: row;">
+                        <!-- Canvio de iluminación -->
+                        <li>
+                            <button id="boton-tema" style="color: black; width: 40%; background: none; border: none;">
+                                <span class="fa-solid fa-sun icono " id="icono-tema"></span>
+                            </button>
+                        </li>
+
+
+                        <!-- Idiomas desplegable -->
+                        <li style="width: 60%;">
+                        <button id="btn-idiomas">EN<a href="#" class="uk"></a></button>
+                        <ul id="menu-idiomas" hidden style="width: 80%; align-items: right;">
+
+                            <li class="flex jcontent-between" style="flex-direction: row;">
+                                <span class="">ES</span>
+                                <a href="index-ES.html" class="em em-flag-ea"></a>
+                            </li>
+
+                            <li class="flex jcontent-between" style="flex-direction: row;">
+                                <span class="">CA</span>
+                                <a href="index-CA.html" class="catalunya"></a>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Información -->
+        <div class="container-info flex jcontent-between pt-3 ps-4" style="flex-direction: row;">
+            <!-- Información 1 -->
+                <div class="info" style="width: 49%; display: none;">
+                    <!-- SOBRE MI -->
+                    <div class="sobremi">
+                        <h5>Sobre mí:</h5>
+                        <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "I need to translate it. i will some day!"</p>
+                    </div>
+            
+                    <!-- IDIOMAS -->
+                    <div>
+                        <ul>
+                            <h4>Idiomas</h4>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Catalá</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Español</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Ingles</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-warning" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="flex jcontent-arround items-center">
+                                <li>Italiano</li>
+                                <div class="progress" style="width: 70%; margin-left: 20px;">
+                                    <div class="progress-bar bg-danger" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Información 2 -->
+                <div class="info-2" style="display: none; width: 49%;">
+                    <div class="ms-2 info-2-content" id="item-container" style="height: 100%;">
+                        <!-- Formación -->
+                        <div class="item-1">
+                            <h4>Formación:</h4>
+                            <ul>
+                                <li>CFGM: Sistemas informaticos</li>
+                                <li>JavaScript TOTAL</li>
+                                <li>Maestria CSS</li>
+                                <li>Especialización GIT / GitHub</li>
+                            </ul>
+                        </div>
+                        <!-- Lista Skills-->
+                        <div class="item-2" style="overflow: auto; max-height: 50%; border: 1px solid #333333; width: 100%;">
+                            <h4>Competencias:</h4>
+                            <ul>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>Bootstrap</li>
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                                <li>Paginas CSS</li>
+                                <li>GIT</li>
+                                <li>GitHub</li>
+                                <li>Paginas CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+    
+
+        <!-- Menú Sociales -->
+        <div class="footer-perso" style="width: 100%;">
+            <div class="flex" style="width: 100%; height: 100%;">
+
+                <div class="flex jcontent-arround" style="width: 70%; height: 100%; position: relative;">
+                    <p class="ms-3" style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto()"><span href="" class="fa-solid fa-user" ></span>Info. Contacto</p>
+
+                    <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()"><span href="" class="fa-solid fa-info"></span>Info. Adicional</p>
+                </div>
+
+                <div class="flex jcontent-end" style="width: 30%; height: 100%;">
+                    <div class="flex jcontent-around" style="width: 50%;">
+                        <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" class="fa-brands fa-linkedin"></a>
+                        <a href="https://github.com/Alexproxxl" class="fa-brands fa-github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto - Desplegable -->
+    <div class="card-contacto" id="card-contacto" onclick="salir()">
+        <div class="content">
+            <h3 class="my-3">Contacto personal</h3>
+            <h4>Telefono:</h4><p>664872270</p>
+            <h4>Email:</h4><p class="mb-1">alexkuadradomaso2003@gmail.com</p>
+            <h4>Horario de Contacto:</h4><br>
+            <p>Preferentemente: lunes -> Sabado / 9:00 -> 19:00</p>
+        </div>
+    </div>
+
+    <!-- Formación - Desplegable -->
+    <div class="card-contacto" id="card-contacto2" onclick="salir()">
+        <div class="content">
+            <div>
+                <h4>Formación:</h4>
+                <ul>
+                    <li>CFGM: Sistemas informaticos</li>
+                    <li>JavaScript TOTAL</li>
+                    <li>Maestria CSS</li>
+                    <li>Especialización GIT / GitHub</li>
+                 </ul>
+            </div>
+            <div>
+                <h4>Experiencia:</h4>
+                <ul>
+                    <li>Fujitsu (Tecnico IT)</li>
+                    <li>Pácticas JS</li>
+                    <li>Paginas CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

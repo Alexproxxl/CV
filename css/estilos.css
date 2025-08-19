@@ -15,6 +15,7 @@ body{
     color: white; 
     height: 100vh; 
     width: 100%;
+    background: var(--fondo-light-1);
 }
 
 li{
@@ -29,13 +30,66 @@ ul{
     padding: 0 !important;
 }
 
-
-.info, .info-2{
-    position: relative;
+.icono{
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    text-decoration: none;
 }
 
-.info-2-content{
-    grid-template-columns: 1;
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover .submenu{
+    display: block;
+}
+
+#btn-idiomas{
+    width: 100%;
+}
+
+.catalunya, .uk{
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+    line-height: 20px;
+}
+
+.catalunya, .uk li{
+    float: left;
+}
+
+.catalunya {
+  background-image: url("../img/Flag_of_Catalonia.svg.png");
+}
+.uk {
+  background-image: url("../img/United_Kingdom.svg.png");
+}
+
+.spacer{
+    background-image: url("../img/spacer2.png");
+    height: 60px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.polyPrueva{
+    height: 100%;
+    clip-path: polygon(50% 0, 62% 13%, 62% 87%, 50% 100%, 36% 87%, 36% 13%);
+    background: black;
 }
 
 
