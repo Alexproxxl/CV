@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root {
+  --fondo-light-1: rgb(182, 182, 182);
+  --fondo-dark-1: black;
+  --fondo-light-2: rgb(201, 199, 199);
+  --fondo-dark-2: #494949;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -2602,7 +2609,7 @@ form * input:focus {
 .main {
   height: 20%;
   width: 35% !important;
-  background: rgb(201, 199, 199);
+  background: var(--fondo-light-2);
   transition: all 0.5s;
 }
 .main:hover {

@@ -17,6 +17,24 @@ $black:#000;
 $indigo:#6610F2;
 $gray:#6C757D;
 
+//COLORES PERSONALIZADOS / AUTOM. COLOR
+
+:root{
+
+    --fondo-light-1: rgb(182, 182, 182);
+    --fondo-dark-1: black;
+    --fondo-light-2: rgb(201, 199, 199);
+    --fondo-dark-2: #494949;
+
+    //buscar la manera de canviar el color a todo a la vez (id por id me pego un tiro)
+    --iconos-light: #494949;
+    --iconos-dark: rgb(182, 182, 182);
+
+    --text-light: #494949;
+    --text-dark: rgb(182, 182, 182);
+
+}
+
 $colores:(
 "primary": $primary,
 "secondary": $secondary,

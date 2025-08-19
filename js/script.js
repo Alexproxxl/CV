@@ -8,17 +8,28 @@ btnIdiomas.addEventListener("click", () => {
     menuIdiomas.toggleAttribute("hidden"); // usa el atributo HTML, no estilos
   });
 
+const boton = document.getElementById("boton-tema");
+const caja = document.getElementById("icono-tema");
 
-const paginaActual = window.location.pathname.split("/").pop();
-const icono = document.querySelector("nav ul li a.fa-solid"); // primer <a> con fa-solid
 
-if (paginaActual === "index-light.html") {
-  icono.classList.remove("fa-moon");
-  icono.classList.add("fa-sun");
-} else {
-  icono.classList.remove("fa-sun");
-  icono.classList.add("fa-moon");
-}
+boton.addEventListener("click", () => {
+  const main = document.getElementById("card-general");
+  const body = document.getElementById("body");
+  // Cambiar de 'rojo' a 'verde' y viceversa
+  if (caja.classList.contains("fa-sun")) {
+    caja.classList.remove("fa-sun");
+    caja.classList.add("fa-moon");
+    main.style.background = 'var(--fondo-dark-2)';
+    body.style.background = 'var(--fondo-dark-1)';
+    console.log('Tendria que cambiar el fondo');
+
+  } else {
+    caja.classList.remove("fa-moon");
+    caja.classList.add("fa-sun");
+    main.style.background = 'var(--fondo-light-2)';
+    body.style.background = 'var(--fondo-light-1)';
+  }
+});
 
 
 function contacto() {
