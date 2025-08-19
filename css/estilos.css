@@ -72,6 +72,25 @@ ul{
   background-image: url("../img/United_Kingdom.svg.png");
 }
 
+.spacer{
+    background-image: url("../img/spacer2.png");
+    height: 60px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.polyPrueva{
+    height: 100%;
+    clip-path: polygon(50% 0, 62% 13%, 62% 87%, 50% 100%, 36% 87%, 36% 13%);
+    background: black;
+}
 
 
 @media screen and (max-width: 1604px){
