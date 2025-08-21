@@ -15,14 +15,14 @@
     <script src="https://kit.fontawesome.com/376dc2c751.js" crossorigin="anonymous"></script>
    
 </head>
-<body class="color-white flex items-center jcontent-center" id="body">
+<body class="flex items-center jcontent-center" id="body">
     <div class="main w-sm-90 flex" style="flex-direction: column;" id="card-general">
         
         <!-- HEADER / INICIO -->
         <div class="header-main flex jcontent-between" style="height: 100%; width: 100%; position: relative;">
             <!-- Imagen -->
-            <div class="img-container flex items-center jcontent-center" style="width: 25%;">
-                <img src="../img/logo.jpg" alt="" style="z-index: 1;">
+            <div class="img-container flex items-center" style="width: 25%;">
+                <img src="../img/logo.jpg" alt="">
             </div>
 
 
@@ -44,14 +44,15 @@
                             </button>
                         </li>
 
+
                         <!-- Idiomas desplegable -->
                         <li style="width: 60%;">
-                        <button id="btn-idiomas">ES <a href="#" class="em em-flag-ea"></a></button>
+                        <button id="btn-idiomas">EN<a href="#" class="uk"></a></button>
                         <ul id="menu-idiomas" hidden style="width: 80%; align-items: right;">
 
                             <li class="flex jcontent-between" style="flex-direction: row;">
-                                <span class="">EN</span>
-                                <a href="index-EN.html" class="uk"></a>
+                                <span class="">ES</span>
+                                <a href="../../index-ES.html" class="em em-flag-ea"></a>
                             </li>
 
                             <li class="flex jcontent-between" style="flex-direction: row;">
@@ -63,19 +64,16 @@
                     </ul>
                 </nav>
             </div>
-
-            <div class="spacer"></div>
-            
         </div>
 
         <!-- Información -->
-        <div class="container-info flex jcontent-between pt-3" style="flex-direction: row;">
+        <div class="container-info flex jcontent-between pt-3 ps-4" style="flex-direction: row;">
             <!-- Información 1 -->
-                <div class="info" style="width: 49%; display: none; padding-left: 10px;">
+                <div class="info" style="width: 49%; display: none;">
                     <!-- SOBRE MI -->
                     <div class="sobremi">
                         <h5>Sobre mí:</h5>
-                        <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "No se que mierda poner killo"</p>
+                        <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "I need to translate it. i will some day!"</p>
                     </div>
             
                     <!-- IDIOMAS -->
@@ -85,34 +83,33 @@
                             <div class="flex jcontent-arround items-center">
                                 <li>Catalá</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 100%; background: gray;"></div>
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Español</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 100%; background: gray;"></div>
+                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Ingles</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 75%; background: gray;"></div>
+                                    <div class="progress-bar bg-warning" style="width: 75%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Italiano</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 20%; background: gray;"></div>
+                                    <div class="progress-bar bg-danger" style="width: 20%;"></div>
                                 </div>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <div class="polyPrueva" style="width: 4%; height: 100%;"></div>
                 <!-- Información 2 -->
-                <div class="info-2" style="display: none; width: 49%; padding-right: 10px;">
-                    <div class="info-2-content" id="item-container" style="height: 100%;">
+                <div class="info-2" style="display: none; width: 49%;">
+                    <div class="ms-2 info-2-content" id="item-container" style="height: 100%;">
                         <!-- Formación -->
                         <div class="item-1">
                             <h4>Formación:</h4>
@@ -199,7 +196,7 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
