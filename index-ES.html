@@ -6,9 +6,9 @@
     <title>Àlex Cuadrado CV</title>
 
     <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     
     <!-- Iconos / JS -->
@@ -22,20 +22,20 @@
         <!-- HEADER / INICIO -->
         <div class="header-main flex jcontent-between" style="height: 100%; width: 100%; position: relative;">
             <!-- Imagen -->
-            <div class="img-container flex items-center jcontent-center" style="width: 25%;">
-                <img src="img/logo.jpg" alt="" style="z-index: 1;">
-            </div>
-
-
-            <!-- Nombre / Formación -->
-            <div class="flex jcontent-center items-center mr-1" style="flex-direction: column; margin-right: 5px; width: 50%;">
-                <h2>Àlex Cuadrado</h2>
-                <h4>Web Developer</h4>
+            <div class="header-movil">
+                <div class="img-container flex items-center jcontent-center" style="width: 25%;">
+                    <img src="img/logo.jpg" alt="" style="z-index: 1;">
+                </div>
+                <!-- Nombre / Formación -->
+                <div class="flex jcontent-center items-center mr-1 titulo" style="flex-direction: column; margin-right: 5px; width: 50%;">
+                    <h2>Àlex Cuadrado</h2>
+                    <h4>Web Developer</h4>
+                </div>
             </div>
 
 
             <!-- Nav Superior -->
-            <div style="width: 25%;">
+            <div style="width: 25%;" class="desplegable-top">
                 <nav style="height: 100%;">
                     <ul class="flex jcontent-between" style="flex-direction: row;">
                         <!-- Canvio de iluminación -->
@@ -86,31 +86,32 @@
                             <div class="flex jcontent-arround items-center">
                                 <li>Catalá</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 100%; background: gray;"></div>
+                                    <div class="progress-bar" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Español</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 100%; background: gray;"></div>
+                                    <div class="progress-bar" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Ingles</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 75%; background: gray;"></div>
+                                    <div class="progress-bar" style="width: 75%;"></div>
                                 </div>
                             </div>
                             <div class="flex jcontent-arround items-center">
                                 <li>Italiano</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
-                                    <div class="progress-bar" style="width: 20%; background: gray;"></div>
+                                    <div class="progress-bar" style="width: 20%;"></div>
                                 </div>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <div class="polyPrueva" style="width: 4%; height: 100%;"></div>
+                <div class="polyPrueva"></div>
+
                 <!-- Información 2 -->
                 <div class="info-2" style="display: none; width: 49%; padding-right: 10px;">
                     <div class="info-2-content" id="item-container" style="height: 100%;">
@@ -150,10 +151,14 @@
         <div class="footer-perso" style="width: 100%;">
             <div class="flex" style="width: 100%; height: 100%;">
 
-                <div class="flex jcontent-arround" style="width: 70%; height: 100%; position: relative;">
-                    <p class="ms-3" style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto()"><span href="" class="fa-solid fa-user" ></span>Info. Contacto</p>
+                <div class="flex jcontent-arround" id="iconos-info" style="width: 70%; height: 100%; position: relative;">
+                    <p class="ms-3" style="font-size: 20px; cursor: pointer;" onclick="contacto()">
+                        <a href="" class="fa-solid fa-user">
+                        </a>Info. Contacto</p>
 
-                    <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()"><span href="" class="fa-solid fa-info"></span>Info. Adicional</p>
+                    <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()">
+                        <a href="" class="fa-solid fa-info" style="width: 20px;">
+                        </a>Info. Adicional</p>
                 </div>
 
                 <div class="flex jcontent-end" style="width: 30%; height: 100%;">

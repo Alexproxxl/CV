@@ -15,19 +15,32 @@ const caja = document.getElementById("icono-tema");
 boton.addEventListener("click", () => {
   const main = document.getElementById("card-general");
   const body = document.getElementById("body");
+  const iconosContacto = document.getElementById("info-contacto");
+  const iconosInfo = document.getElementById("iconos-info");
   // Cambiar de 'rojo' a 'verde' y viceversa
   if (caja.classList.contains("fa-sun")) {
-    caja.classList.remove("fa-sun");
-    caja.classList.add("fa-moon");
-    main.style.background = 'var(--fondo-dark-2)';
-    body.style.background = 'var(--fondo-dark-1)';
-    console.log('Tendria que cambiar el fondo');
+      caja.classList.remove("fa-sun");
+      caja.classList.add("fa-moon");
 
+      main.style.background = 'var(--fondo-dark-2)';
+      body.style.background = 'var(--fondo-dark-1)';
+      body.style.color = 'var(--text-dark)';
+      console.log('Tendria que cambiar el fondo');
+    /* Iconos*/
+      document.querySelectorAll("a").forEach(a => {a.style.color = "var(--iconos-dark)";});
+      caja.style.color = 'var(--iconos-dark)';
+      iconosInfo.style.color = 'var(--iconos-dark)';
   } else {
     caja.classList.remove("fa-moon");
     caja.classList.add("fa-sun");
+
     main.style.background = 'var(--fondo-light-2)';
     body.style.background = 'var(--fondo-light-1)';
+    body.style.color = 'var(--text-light)';
+    /* Iconos*/
+    document.querySelectorAll("a").forEach(a => {a.style.color = "var(--iconos-light)";});
+    caja.style.color = 'var(--iconos-light)';
+    iconosInfo.style.color = 'var(--iconos-light)';
   }
 });
 

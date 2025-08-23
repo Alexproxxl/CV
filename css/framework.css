@@ -2,9 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 :root {
   --fondo-light-1: rgb(182, 182, 182);
-  --fondo-dark-1: black;
+  --fondo-dark-1: rgb(26, 26, 26);
   --fondo-light-2: rgb(201, 199, 199);
   --fondo-dark-2: #494949;
+  --iconos-light: #494949;
+  --iconos-dark: rgb(182, 182, 182);
+  --text-light: #494949;
+  --text-dark: rgb(182, 182, 182);
 }
 
 html {
@@ -2626,6 +2630,10 @@ form * input:focus {
 .main:hover .header-main {
   position: relative;
   height: 30% !important;
+  /*  !!! REVISAR !!!   */ /*  !!! REVISAR !!!   */ /*  !!! REVISAR !!!   */
+}
+.main:hover .header-main .spacer {
+  display: block;
 }
 .main:hover .header-main::before {
   content: "";
@@ -2665,7 +2673,6 @@ form * input:focus {
 .footer-perso div a, .footer-perso div span {
   height: 100%;
   width: 50px;
-  color: black;
   font-size: 40px;
 }
 .footer-perso span {

@@ -39,6 +39,12 @@
         .header-main{
             position: relative;
             height: 30% !important;
+
+            .spacer{
+                display: block;
+            }
+
+            /*  !!! REVISAR !!!   */ /*  !!! REVISAR !!!   */ /*  !!! REVISAR !!!   */
             &::before{
                 content: "";
                 color: red;
@@ -82,7 +88,7 @@
         a, span{
             height: 100%;
             width: 50px;
-            color: black;
+            
             font-size: 40px;
         }
     }
