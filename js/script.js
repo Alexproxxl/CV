@@ -46,28 +46,31 @@ boton.addEventListener("click", () => {
 
 
 function contacto() {
-    var info = document.getElementById('card-contacto');
-    var cardGeneral = document.getElementById('card-general');
-    cardGeneral.style.filter = 'blur(5px)';
-    info.style.display = 'block';
-    console.log('Botón clickeado');
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('card-contacto').style.display = 'block';
+  document.getElementById('card-contacto2').style.display = 'none';
 }
 
 function contacto2() {
-    var info = document.getElementById('card-contacto2');
-    var cardGeneral = document.getElementById('card-general');
-    cardGeneral.style.filter = 'blur(5px)';
-    info.style.display = 'block';
-    console.log('Botón clickeado');
+  document.getElementById('overlay').style.display = 'flex';
+  document.getElementById('card-contacto2').style.display = 'block';
+  document.getElementById('card-contacto').style.display = 'none';
 }
 
-function salir() {
-    var info = document.getElementById('card-contacto');
-    var info2 = document.getElementById('card-contacto2')
-    var cardGeneral = document.getElementById('card-general');
-    info.style.display = "none";
-    info2.style.display = "none";
-    cardGeneral.style.filter = 'blur(0)';
-    console.log('Que esta pasando aquí?');
-}
+// Cierra al clicar en overlay
+document.getElementById('overlay').addEventListener('click', function () {
+  this.style.display = 'none';
+});
 
+// Evitar cierre si clicas dentro del modal
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+});
+
+const main = document.querySelector(".main");
+
+  main.addEventListener("mouseenter", () => {
+    main.classList.add("expand"); // cuando entras con el mouse, se queda fijo
+  });

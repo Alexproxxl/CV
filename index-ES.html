@@ -76,7 +76,10 @@
                     <!-- SOBRE MI -->
                     <div class="sobremi">
                         <h5>Sobre mí:</h5>
-                        <p>Experiencia trabajando en equipo, con nociones de programación y ganas de ponerlas en practicas! "No se que mierda poner killo"</p>
+                        <p>Experiencia trabajando en equipo. <br>  
+                            Nociones de programación (y ganas de ponerlas en practicas!). <br> 
+                            Pasión por el aprendizaje
+                        </p>
                     </div>
             
                     <!-- IDIOMAS -->
@@ -116,28 +119,56 @@
                 <div class="info-2" style="display: none; width: 49%; padding-right: 10px;">
                     <div class="info-2-content" id="item-container" style="height: 100%;">
                         <!-- Formación -->
-                        <div class="item-1">
                             <h4>Formación:</h4>
+                        <div class="item-1" style="overflow: auto; max-height: 40%; border: 1px solid #333333; width: 100%; margin-top: 20px;">
                             <ul>
-                                <li>CFGM: Sistemas informaticos</li>
-                                <li>JavaScript TOTAL</li>
-                                <li>Maestria CSS</li>
-                                <li>Especialización GIT / GitHub</li>
+                                <li>React 19 / ASP.NET core 9 (Cursando)</li>
+                                <li><a href="img/cert/Git-GitHub-Certificado.pdf" target="_blank" style="text-decoration: underline;">Especialización GIT / GitHub</a><br>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>ago. 2025 - ago. 2025</h6>
+                                </li>
+
+                                <li><a href="img/cert/CSS-Certificado.pdf" target="_blank" style="text-decoration: underline;">Maestria CSS</a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>ago. 2025 - ago. 2025</h6>
+                                </li>
+
+                                <li><a href="img/cert/JStotal.pdf" target="_blank" style="text-decoration: underline;"> JavaScript TOTAL</a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>ago. 2025 - ago. 2025</h6>
+                                </li>
+                                <li><a href="#">CFGM: Sistemas informaticos y redes </a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>ago. 2025 - ago. 2025</h6>
+                                </li>
                             </ul>
                         </div>
                         <!-- Lista Skills-->
-                        <div class="item-2" style="overflow: auto; max-height: 50%; border: 1px solid #333333; width: 100%;">
-                            <h4>Competencias:</h4>
+                        <h4>Competencias:</h4>
+                        <div class="item-2" style="overflow: auto; max-height: 40%; border: 1px solid #333333; width: 100%; margin-top: 20px;">
                             <ul>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>Bootstrap</li>
+                                <li>CSS
+                                    <ul>
+                                        <li class="sub">SASS</li>
+                                        <li class="sub">Bootstrap</li>
+                                    </ul>
+                                </li>
                                 <li>HTML</li>
-                                <li>JavaScript</li>
-                                <li>Paginas CSS</li>
-                                <li>GIT</li>
-                                <li>GitHub</li>
-                                <li>Paginas CSS</li>
+                                <li><a href="https://www.udemy.com/course/javascript-total/?couponCode=MT260825G1">JavaScript</a>
+                                    <ul>
+                                        <li class="sub">Node.js</li>
+                                        <li class="sub">React</li>
+                                        <li class="sub">Angular</li>
+                                        <li class="sub">JSON</li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <ul>GitHub
+                                        <li>GIT</li>
+                                        <li>GitHub Pages</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -161,46 +192,50 @@
                         </a>Info. Adicional</p>
                 </div>
 
-                <div class="flex jcontent-end" style="width: 30%; height: 100%;">
-                    <div class="flex jcontent-around" style="width: 50%;">
-                        <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" class="fa-brands fa-linkedin"></a>
-                        <a href="https://github.com/Alexproxxl" class="fa-brands fa-github"></a>
-                    </div>
+                <div class="flex jcontent-end" id="sociales" style="width: 30%; height: 100%;">
+                    <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" class="fa-brands fa-linkedin"></a>
+                    <a href="https://github.com/Alexproxxl" class="fa-brands fa-github"></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Contacto - Desplegable -->
-    <div class="card-contacto" id="card-contacto" onclick="salir()">
-        <div class="content">
-            <h3 class="my-3">Contacto personal</h3>
-            <h4>Telefono:</h4><p>664872270</p>
-            <h4>Email:</h4><p class="mb-1">alexkuadradomaso2003@gmail.com</p>
-            <h4>Horario de Contacto:</h4><br>
-            <p>Preferentemente: lunes -> Sabado / 9:00 -> 19:00</p>
-        </div>
-    </div>
-
-    <!-- Formación - Desplegable -->
-    <div class="card-contacto" id="card-contacto2" onclick="salir()">
-        <div class="content">
-            <div>
-                <h4>Formación:</h4>
-                <ul>
-                    <li>CFGM: Sistemas informaticos</li>
-                    <li>JavaScript TOTAL</li>
-                    <li>Maestria CSS</li>
-                    <li>Especialización GIT / GitHub</li>
-                 </ul>
+    <div class="overlay" id="overlay">
+        <!-- Contacto - Desplegable -->
+        <div class="card-contacto modal" id="card-contacto">
+            <div class="content">
+                <h3 class="my-3">Contacto personal</h3>
+                <h4>Telefono:</h4><p>664872270</p>
+                <h4>Email:</h4><p class="mb-1">alexkuadradomaso2003@gmail.com</p>
+                <h4>Horario de Contacto:</h4><br>
+                <p>Preferentemente: lunes -> Sabado / 9:00 -> 19:00</p>
             </div>
-            <div>
-                <h4>Experiencia:</h4>
-                <ul>
-                    <li>Fujitsu (Tecnico IT)</li>
-                    <li>Pácticas JS</li>
-                    <li>Paginas CSS</li>
-                </ul>
+        </div>
+        <!-- Formación - Desplegable -->
+        <div class="card-contacto modal" id="card-contacto2">
+            <div class="content">
+                <div style="height: 200px; width: 100%; position: relative;">
+                    <h2 style="text-align: center; font-size: 100px;">Experiencia</h2>
+                    <div class="spacer" style="display: block !important;"></div>
+                </div>
+                <div class="mt-4">
+                    <h4>SIIConcatel (Subcontratado en Fujitsu)</h4>
+                    <h5>Horario: 8:00 -> 17:00</h5>
+                    <h6>2022 - 2023</h6>
+                    <br>
+                    <p><b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.</p>
+                    <ul>
+                        <li>- Mantenimiento de equipos informaticos (tanto hardware como software especifico).</li>
+                        <li>- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).
+                        </li>
+                        <li>- Recepción, derivación y <b> resolución de tikets </b>/ incidencias
+                        </li>
+                    </ul>
+                    <br><br>
+                    <h4>Portafolio (Web Dev)</h4>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit porro dignissimos ipsam sequi quae iste.</p>
+                </div>
             </div>
         </div>
     </div>
