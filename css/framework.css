@@ -1,14 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Iceberg:regular);
 :root {
   --fondo-light-1: rgb(182, 182, 182);
   --fondo-dark-1: rgb(26, 26, 26);
   --fondo-light-2: rgb(201, 199, 199);
   --fondo-dark-2: #494949;
+  --fondo-light-modal: rgba(201, 199, 199, 0.7);
+  --fondo-dark-modal: rgba(61, 61, 61, 0.7);
   --iconos-light: #494949;
   --iconos-dark: rgb(182, 182, 182);
   --text-light: #494949;
   --text-dark: rgb(182, 182, 182);
+  --border-light: #1b1b1b;
+  --border-dark: rgb(209, 209, 209);
+}
+
+.iceberg {
+  font-family: "iceberg";
 }
 
 html {
@@ -2610,6 +2619,30 @@ form * input:focus {
   background: rgb(84.3605150215, 91.3905579399, 97.6394849785);
 }
 
+.icono-contacto-desplegable {
+  font-size: 35px;
+}
+
+body {
+  color: rgb(var(--text-light));
+  height: 100vh;
+  width: 100%;
+  background: rgb(var(--fondo-light-1));
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+}
+.img-container img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
 .main {
   height: 20%;
   width: 35%;
@@ -2620,7 +2653,7 @@ form * input:focus {
 .main.expand {
   height: 85%;
   min-width: 50% !important;
-  background: rgb(201, 199, 199);
+  background: var(--fondo-light-2);
 }
 .main.expand *.info, .main.expand .info-2 {
   display: block !important;
@@ -2640,19 +2673,6 @@ form * input:focus {
 }
 .main.expand .footer-perso {
   height: 10% !important;
-}
-
-.img-container {
-  position: relative;
-  width: 100%;
-}
-.img-container img {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  background-position: center;
-  border-radius: 50%;
 }
 
 .footer-perso {
@@ -2679,22 +2699,18 @@ form * input:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
-  width: 50%;
-  background: rgb(163, 163, 163);
-  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 85% !important;
+  width: 50%;
+  border-radius: 25px;
+  border: 2px solid var(--border-light);
+  background: rgba(var(--fondo-light-2), 0.6);
+  z-index: 3;
 }
-.card-contacto::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(202, 202, 202, 0.6);
+.card-contacto .main {
+  filter: blur(15px);
 }
 
 /*# sourceMappingURL=framework.css.map */

@@ -1,0 +1,20 @@
+{
+    "sobre-mi": "About me:",
+    "sobre-mi-descripcion": "Experience in TeamWork. Programing Knowlege. Passion for lerning",
+    "idiomas": "Languages:",
+    "formacion": "Formation:",
+    "competencias": "Competencies:",
+    "contacto": "Contact info.",
+    "experiencia": "Experience",
+
+    
+    "experiencia-titulo-1": "SIIConcatel (outsourced at Fujitsu)",
+    "experiencia-horario-1": "Schedule: 8:00 -> 17:00",
+    "experiencia-descripcion-1": "<b>Proximity technician</b> at public sanity, Girona's province.",
+    "experiencia-descripcion-li-1":"- Electronic devices mantence (even hardware then spcific software).",
+    "experiencia-descripcion-li-2":"- Network mantence (Raks, ethernet, IP configuration, etc...).",
+    "experiencia-descripcion-li-3":"- Reception, derivation & issues / <b>tikets resolution</b>",
+
+    "experiencia-titulo-2": "Portfoil (WebDev)",
+    "experiencia-descripcion-2": "Lorem ipsum (in english)"
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,19 +47,11 @@
 
                         <!-- Idiomas desplegable -->
                         <li style="width: 60%;">
-                        <button id="btn-idiomas">ES <a href="#" class="em em-flag-ea"></a></button>
-                        <ul id="menu-idiomas" hidden style="width: 80%; align-items: right;">
-
-                            <li class="flex jcontent-between" style="flex-direction: row;">
-                                <span class="">EN</span>
-                                <a href="docs/index-EN.html" class="uk"></a>
-                            </li>
-
-                            <li class="flex jcontent-between" style="flex-direction: row;">
-                                <span class="">CA</span>
-                                <a href="docs/index-CA.html" class="catalunya"></a>
-                            </li>
-                        </ul>
+                            <select class="iceberg" data-i18n-switcher class="locale-switcher">
+                                <option value="es">Español</option>
+                                <option value="en">English</option>
+                                <option value="ca">Catalá</option>
+                            </select>
                         </li>
                     </ul>
                 </nav>
@@ -75,8 +67,8 @@
                 <div class="info" style="width: 49%; display: none; padding-left: 10px;">
                     <!-- SOBRE MI -->
                     <div class="sobremi">
-                        <h5>Sobre mí:</h5>
-                        <p>Experiencia trabajando en equipo. <br>  
+                        <h5 class="iceberg" data-i18n-key="sobre-mi">Sobre mí:</h5>
+                        <p data-i18n-key="sobre-mi-descripcion">Experiencia trabajando en equipo. <br>  
                             Nociones de programación (y ganas de ponerlas en practicas!). <br> 
                             Pasión por el aprendizaje
                         </p>
@@ -85,7 +77,7 @@
                     <!-- IDIOMAS -->
                     <div>
                         <ul>
-                            <h4>Idiomas</h4>
+                            <h4 class="iceberg" data-i18n-key="idiomas">Idiomas</h4>
                             <div class="flex jcontent-arround items-center">
                                 <li>Catalá</li>
                                 <div class="progress" style="width: 70%; margin-left: 20px;">
@@ -119,7 +111,7 @@
                 <div class="info-2" style="display: none; width: 49%; padding-right: 10px;">
                     <div class="info-2-content" id="item-container" style="height: 100%;">
                         <!-- Formación -->
-                            <h4>Formación:</h4>
+                            <h4 class="iceberg" data-i18n-key="formacion">Formación:</h4>
                         <div class="item-1" style="overflow: auto; max-height: 40%; border: 1px solid #333333; width: 100%; margin-top: 20px;">
                             <ul>
                                 <li>React 19 / ASP.NET core 9 (Cursando)</li>
@@ -144,7 +136,7 @@
                             </ul>
                         </div>
                         <!-- Lista Skills-->
-                        <h4>Competencias:</h4>
+                        <h4 data-i18n-key="competencias">Competencias:</h4>
                         <div class="item-2" style="overflow: auto; max-height: 40%; border: 1px solid #333333; width: 100%; margin-top: 20px;">
                             <ul>
                                 <li>CSS
@@ -153,9 +145,14 @@
                                         <li class="sub">Bootstrap</li>
                                     </ul>
                                 </li>
-                                <li>HTML</li>
+                                <li>HTML
+                                    <ul>
+                                        <li class="sub">(POO) Programación orientada a objetos</li>
+                                    </ul>
+                                </li>
                                 <li><a href="https://www.udemy.com/course/javascript-total/?couponCode=MT260825G1">JavaScript</a>
                                     <ul>
+                                        <li class="sub">TypeSctript</li>
                                         <li class="sub">Node.js</li>
                                         <li class="sub">React</li>
                                         <li class="sub">Angular</li>
@@ -185,11 +182,12 @@
                 <div class="flex jcontent-arround" id="iconos-info" style="width: 70%; height: 100%; position: relative;">
                     <p class="ms-3" style="font-size: 20px; cursor: pointer;" onclick="contacto()">
                         <a href="" class="fa-solid fa-user">
-                        </a>Info. Contacto</p>
+                        </a><span data-i18n-key="contacto" style="font-size: 25px;" id="info-contacto">Info. Contacto</span></p>
 
-                    <p style="font-size: 20px; cursor: pointer;" id="info-contacto" onclick="contacto2()">
+                    <p style="font-size: 20px; cursor: pointer;" onclick="contacto2()">
                         <a href="" class="fa-solid fa-info" style="width: 20px;">
-                        </a>Info. Adicional</p>
+                        </a ><span data-i18n-key="experiencia" style="font-size: 25px;" id="info-contacto-2">Info. Adicional</span>
+                    </p>
                 </div>
 
                 <div class="flex jcontent-end" id="sociales" style="width: 30%; height: 100%;">
@@ -203,43 +201,63 @@
     <div class="overlay" id="overlay">
         <!-- Contacto - Desplegable -->
         <div class="card-contacto modal" id="card-contacto">
-            <div class="content">
-                <h3 class="my-3">Contacto personal</h3>
-                <h4>Telefono:</h4><p>664872270</p>
-                <h4>Email:</h4><p class="mb-1">alexkuadradomaso2003@gmail.com</p>
-                <h4>Horario de Contacto:</h4><br>
-                <p>Preferentemente: lunes -> Sabado / 9:00 -> 19:00</p>
+            <div class="content" id="box-desplegable-contacto">
+
+                <div style="height: 200px; width: 100%; position: relative;">
+                    <h2 style="text-align: center; font-size: 100px; font-family: iceberg;" data-i18n-key="contacto-desplegable-titulo" >Contacto Personal</h2>
+                    <div class="spacer" style="display: block !important;"></div>
+                </div>
+
+                <div class="flex jcontent-center items-center mt-4">
+                    <span class="fa-solid fa-phone icono-contacto-desplegable me-2"></span>
+                    <h4 data-i18n-key="telefono">Telefono:</h4>
+                </div>
+                <h5>664872270</h5> <br>
+
+                <div class="flex jcontent-center items-center mt-4">
+                    <span class="fa-solid fa-envelope icono-contacto-desplegable me-2"></span>
+                    <h4>Email:</h4>
+                </div>
+                <h5 class="mb-1">alexkuadradomaso2003@gmail.com</h5> <br>
+
+                <div class="flex jcontent-center items-center mt-4">
+                    <span class="fa-solid fa-location-dot icono-contacto-desplegable me-2"></span>
+                    <h4 data-i18n-key="localidad"></h4>
+                </div>
+
+                <h5 data-i18n-key="localidad-descripcion"></h5>
             </div>
         </div>
         <!-- Formación - Desplegable -->
-        <div class="card-contacto modal" id="card-contacto2">
-            <div class="content">
+        <div class="card-contacto modal flex jcontent-center items-center" id="card-contacto2">
+            <div class="content" id="box-desplegable-experiencia">
                 <div style="height: 200px; width: 100%; position: relative;">
-                    <h2 style="text-align: center; font-size: 100px;">Experiencia</h2>
+                    <h2 class="iceberg" style="text-align: center; font-size: 100px;" data-i18n-key="experiencia">Experiencia</h2>
                     <div class="spacer" style="display: block !important;"></div>
                 </div>
                 <div class="mt-4">
-                    <h4>SIIConcatel (Subcontratado en Fujitsu)</h4>
-                    <h5>Horario: 8:00 -> 17:00</h5>
+                    <h4 data-i18n-key="experiencia-titulo-1">SIIConcatel (Subcontratado en Fujitsu)</h4>
+                    <h5 data-i18n-key="experiencia-horario-1">Horario: 8:00 -> 17:00</h5>
                     <h6>2022 - 2023</h6>
                     <br>
-                    <p><b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.</p>
+                    <p data-i18n-key="experiencia-descripcion-1"><b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.</p>
                     <ul>
-                        <li>- Mantenimiento de equipos informaticos (tanto hardware como software especifico).</li>
-                        <li>- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).
+                        <li data-i18n-key="experiencia-descripcion-li-1">- Mantenimiento de equipos informaticos (tanto hardware como software especifico).</li>
+                        <li data-i18n-key="experiencia-descripcion-li-2">- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).
                         </li>
-                        <li>- Recepción, derivación y <b> resolución de tikets </b>/ incidencias
+                        <li data-i18n-key="experiencia-descripcion-li-3">- Recepción, derivación y <b> resolución de tikets </b>/ incidencias
                         </li>
                     </ul>
                     <br><br>
-                    <h4>Portafolio (Web Dev)</h4>
+                    <h4 data-i18n-key="experiencia-titulo-2">Portafolio (Web Dev)</h4>
                     <br>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit porro dignissimos ipsam sequi quae iste.</p>
+                    <p data-i18n-key="experiencia-descripcion-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit porro dignissimos ipsam sequi quae iste.</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="js/idiomas.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

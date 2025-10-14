@@ -1,6 +1,7 @@
 //VARIABLES
 $font1: 'Open Sans', Arial, sans-serif;
 $font2: 'Roboto', sans-serif;
+$font3: 'Jersey 10', sans-serif;
 $max-container: 1200px;
 
 // COLORES
@@ -26,12 +27,17 @@ $gray:#6C757D;
     --fondo-light-2: rgb(201, 199, 199);
     --fondo-dark-2: #494949;
 
+    --fondo-light-modal: rgba(201, 199, 199, 0.7);
+    --fondo-dark-modal: rgba(61, 61, 61, 0.7);
     //buscar la manera de canviar el color a todo a la vez (id por id me pego un tiro)
     --iconos-light: #494949;
     --iconos-dark: rgb(182, 182, 182);
 
     --text-light: #494949;
     --text-dark: rgb(182, 182, 182);
+
+    --border-light: #1b1b1b;
+    --border-dark: rgb(209, 209, 209);
 
 }
 

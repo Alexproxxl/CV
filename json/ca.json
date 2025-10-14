@@ -1,0 +1,20 @@
+{
+    "sobre-mi": "Sobre mí:",
+    "sobre-mi-descripcion": "Experiencia treballant en equip. Coneixements de programació. Passió per l'aprenentatge",
+    "idiomas": "Idiomes:",
+    "formacion": "Formació:",
+    "competencias": "Competencies:",
+    "contacto": "info. Contacte",
+    "experiencia": "Experiencia",
+
+    
+    "experiencia-titulo-1": "SIIConcatel (Subcontractat a Fujitsu)",
+    "experiencia-horario-1": "Horari: 8:00 -> 17:00",
+    "experiencia-descripcion-1": "<b>Tecnic de proximitat</b> a la sanitat publica, provincia de Girona.",
+    "experiencia-descripcion-li-1":"- Manteniment d'equips electrionics (Tant hardware, com software especific).",
+    "experiencia-descripcion-li-2":"- Manteniment de xarxes (Raks, ethernet, Configuracions IP, etc...).",
+    "experiencia-descripcion-li-3":"- Recepcio, derivació /<b> resolució de tikets</b>",
+
+    "experiencia-titulo-2": "Portafoli (WebDev)",
+    "experiencia-descripcion-2": "Lorem ipsum (en Catalá)"
+}

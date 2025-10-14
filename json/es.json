@@ -1,0 +1,23 @@
+{
+    "sobre-mi": "Sobre mí:",
+    "sobre-mi-descripcion": "Experiencia trabajando en equipo. Nociones de programación (y ganas de ponerlas en practicas!). Pasión por el aprendizaje",
+    "idiomas": "Idiomas:",
+    "formacion": "Formación:",
+    "competencias": "Competencias:",
+    "contacto": "Info. Contacto",
+    "experiencia": "Experiencia",
+    "experiencia-titulo-1": "SIIConcatel (Subcontratado en Fujitsu)",
+    "experiencia-horario-1": "Horario: 8:00 -> 17:00",
+    "experiencia-descripcion-1": "<b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.",
+    "experiencia-descripcion-li-1":"- Mantenimiento de equipos informaticos (tanto hardware como software especifico).",
+    "experiencia-descripcion-li-2":"- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).",
+    "experiencia-descripcion-li-3":"- Recepción, derivación y <b> resolución de tikets </b>/ incidencias",
+
+    "experiencia-titulo-2": "Portafolio (WebDev)",
+    "experiencia-descripcion-2": "Lorem ipsum (en Español)",
+
+    "contacto-desplegable-titulo":"Contacto personal",
+    "telefono": "Telefono",
+    "localidad": "Localidad:",
+    "localidad-descripcion": "Girona, Cataluña, España"
+}
