@@ -1,10 +1,10 @@
 {
     "sobre-mi": "About me:",
-    "sobre-mi-descripcion": "Experience in TeamWork. Programing Knowlege. Passion for lerning",
+    "sobre-mi-descripcion": "Hi!! <i class='fa-regular fa-handshake'></i>, I'm Àlex, <br> I've started working as IT (2 years of experience) and this year i've decided to jump in to <strong>Web Development!!!</strong> <br><br> Studies based on <strong>Frontend</strong> and intermediate <strong>Backend</strong> skill level. <br><br> Experience in <strong>TeamWork</strong>.<br> Passion for <strong>lerning</strong> and <strong>self inprovement</strong>.",
     "idiomas": "Languages:",
     "formacion": "Formation:",
-    "competencias": "Competencies:",
-    "contacto": "Contact info.",
+    "competencias": "Competences:",
+    "contacto": "Contact",
     "experiencia": "Experience",
 
     
@@ -15,6 +15,18 @@
     "experiencia-descripcion-li-2":"- Network mantence (Raks, ethernet, IP configuration, etc...).",
     "experiencia-descripcion-li-3":"- Reception, derivation & issues / <b>tikets resolution</b>",
 
-    "experiencia-titulo-2": "Portfoil (WebDev)",
-    "experiencia-descripcion-2": "Lorem ipsum (in english)"
+    "experiencia-titulo-2": "business practices FCT",
+    "experiencia-subtitulo-2": "Tecnigi (Girona)",
+    "experiencia-horario-2": "9:00 -> 13:00 /.../ 18:00 -> 21:00",
+    "experiencia-descripcion-2": "Experience at <strong>manipulation / reparation</strong> of electronic devices",
+
+    "experiencia-descripcion-li-2-1": "- Variated electronic devices reparation (PC, phone, consoles, etc...).",
+    "experiencia-descripcion-li-2-2": "- Software mantence (incompatibilities, sequirity issues, malware management, data back-up, etc...).",
+    "experiencia-descripcion-li-2-3": "- Store management (sells, stock, basic cash management...).",
+
+
+    "contacto-desplegable-titulo":"Contact",
+    "telefono": "Phone Number:ssss",
+    "localidad": "Location:",
+    "localidad-descripcion": "Girona, Cataluña, España"
 }

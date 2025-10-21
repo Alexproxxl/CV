@@ -1,11 +1,13 @@
 {
     "sobre-mi": "Sobre mí:",
-    "sobre-mi-descripcion": "Experiencia trabajando en equipo. Nociones de programación (y ganas de ponerlas en practicas!). Pasión por el aprendizaje",
+    "sobre-mi-descripcion": "Hola <i class='fa-regular fa-handshake'></i>, Soy Àlex, empezé en el mundo laboral como tecnico informático (2 años de experiencia) y este año he decidido dar el salto al <strong>desarrollo web!!!</strong> <br><br> Estudios orientados al <strong>Frontend</strong> y conocimientos medios de <strong>Backend</strong>. <br><br> Experiencia <strong>trabajando en equipo</strong>. <br> Pasión por el <strong>aprendizaje</strong> y la <strong>autosuperación</strong>. ",
     "idiomas": "Idiomas:",
     "formacion": "Formación:",
     "competencias": "Competencias:",
-    "contacto": "Info. Contacto",
+    "contacto": "Contacto",
     "experiencia": "Experiencia",
+
+
     "experiencia-titulo-1": "SIIConcatel (Subcontratado en Fujitsu)",
     "experiencia-horario-1": "Horario: 8:00 -> 17:00",
     "experiencia-descripcion-1": "<b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.",
@@ -13,11 +15,23 @@
     "experiencia-descripcion-li-2":"- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).",
     "experiencia-descripcion-li-3":"- Recepción, derivación y <b> resolución de tikets </b>/ incidencias",
 
-    "experiencia-titulo-2": "Portafolio (WebDev)",
-    "experiencia-descripcion-2": "Lorem ipsum (en Español)",
+    "experiencia-titulo-2": "Practicas de empresa FCT",
+    "experiencia-subtitulo-2": "Tecnigi (Girona)",
+    "experiencia-horario-2": "9:00 -> 13:00 /.../ 18:00 -> 21:00",
+    "experiencia-descripcion-2": "Experiencia en manipulación y reparación de equipos informáticos.",
 
-    "contacto-desplegable-titulo":"Contacto personal",
-    "telefono": "Telefono",
+    "experiencia-descripcion-li-2-1": "- Reparación de equipos electronicos variados (PC, movil, consolas, etc...).",
+    "experiencia-descripcion-li-2-2": "- Mantenimiento de software (incompatibilidades, fallas de seguridad, gestion de malware, recuperación de datos, etc...).",
+    "experiencia-descripcion-li-2-3": "- Gestión de tiendas (ventas, stock, Gestión basica de cuentas...).",
+
+
+
+
+
+
+
+    "contacto-desplegable-titulo":"Contacto",
+    "telefono": "<span style='position: absolute; left: 0;' class='fa-solid fa-phone icono-contacto-desplegable'></span>Telefono:",
     "localidad": "Localidad:",
     "localidad-descripcion": "Girona, Cataluña, España"
 }

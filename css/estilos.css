@@ -1,94 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all .5s;
-}
-
-a, span{
-    color: var(--iconos-light);
-    text-decoration: none;
-}
-
-
-body{
-    color: var(--text-light);
-    height: 100vh; 
-    width: 100%;
-    background: var(--fondo-light-1);
-}
-
-li{
-    padding-top: 15px;
-    padding-left: 10px;
-    list-style: none;
-
-    line-height: 20px;
-}
-
-ul{
-    margin: 0;
-    padding: 0 !important;
-}
-
-.sub{
-    padding-left: 30px;
-}
 
 /* Header */
-.img-container{
-    z-index: 1 !important;
-}
-
-.submenu{
-    display: none;
-    position: absolute;
-}
-
-.dropdown-submenu:hover .submenu{
-    display: block;
-}
-
-#btn-idiomas{
-    width: 100%;
-}
-
-.catalunya, .uk{
-    display: inline-block;
-    width: 24px;
-    height: 18px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20%;
-    line-height: 20px;
-}
-
-.catalunya, .uk li{
-    float: left;
-}
-
-.catalunya {
-  background-image: url("../img/Flag_of_Catalonia.svg.png");
-}
-.uk {
-  background-image: url("../img/United_Kingdom.svg.png");
-}
-
-.spacer{
-    background-image: url("../img/spacer2.png");
-    height: 60px;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    z-index: 0 ;
-    display: none;
-}
-
 .header-movil{
     all: unset;
     display: contents ;
@@ -120,38 +31,8 @@ ul{
     
 }
 
-.polyPrueva{
-    height: 100%; width: 4%;
-    clip-path: polygon(50% 0, 62% 13%, 62% 87%, 50% 100%, 36% 87%, 36% 13%);
-    background: black;
-}
 
 /* ---- ADDONS ---- */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 10;
-  transition: all 1s;
-}
-.modal {
-    
-    width: 50%; height: 100vh;
-    padding: 20px;
-    border-radius: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 1s;
-}
-
-.modal .content{
-    width: 100%; height: 100%;
-}
-.modal h4 {
-    font-size: 40px;
-}
 
 #box-desplegable-experiencia, #box-desplegable-contacto{
     background: var(--fondo-light-modal);
@@ -250,18 +131,7 @@ ul{
         flex-direction: column;
     }
 
-    .desplegable-top{
-        order: 1;
-        width: 100% !important;
-        height: 50px;
-        right: 10px !important;
-    }
-    .desplegable-top nav{
-        width: 30%;
-        float: right;
-        margin-right: 20px;
-
-    }
+    
 
     .img-container{
         order: 2;
@@ -290,11 +160,5 @@ ul{
     }
 
     /* ---- FOOTER ---- */
-   #iconos-info{
-    width: 80% !important;
-   } 
-
-   #sociales{
-    width: 20% !important;
-   }
+   
 }

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Àlex Cuadrado CV</title>
+
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    
+    <!-- Iconos / JS -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/376dc2c751.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body class="color-white flex items-center jcontent-center" id="body">
+    <!--MAIN CARD-->
+    <div class="main w-sm-90 flex" style="flex-direction: column;" id="card-general">
+        
+        <!-- HEADER / INICIO -->
+        <div class="header-main" style="position: relative;">
+
+            <!-- Imagen -->
+            <div class="header-movil">
+                <div class="img-container" style="width: 25%; transition: all 2s;">
+                    <img id="foto" src="img/foto-light.jpg" alt="" style="z-index: 1;">
+                </div>
+                <!-- Nombre / Formación -->
+                <div class="title-container titulo">
+                    <h2>Àlex Cuadrado</h2>
+                    <h4>Web Developer</h4>
+                </div>
+                <!-- Nav Superior -->
+                <div class="desplegable-top" >
+                    <nav>
+                        <ul >
+                            <!-- Canvio de iluminación -->
+                            <li>
+                                <button id="boton-tema">
+                                    <span class="fa-solid fa-sun icono " id="icono-tema"></span>
+                                </button>
+                            </li>
+    
+                            <!-- Idiomas desplegable -->
+                            <li >
+                                <select class="iceberg" data-i18n-switcher class="locale-switcher">
+                                    <option value="es">Español</option>
+                                    <option value="en">English</option>
+                                    <option value="ca">Catalá</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="spacer" id="spacer1"></div>
+            
+        </div>
+
+        <!-- Información -->
+        <div class="container-info">
+            <!-- Información 1 -->
+                <div class="info">
+                    <!-- SOBRE MI -->
+                    <div class="sobremi">
+                        <h5 class="iceberg" data-i18n-key="sobre-mi">Sobre mí:</h5>
+                        <p data-i18n-key="sobre-mi-descripcion">
+                            Experiencia trabajando en equipo. <br>  
+                            Nociones de programación (y ganas de ponerlas en practicas!). <br> 
+                            Pasión por el <strong>aprendizaje</strong> y el <strong>Autosuperación</strong>
+                        </p>
+                    </div>
+            
+                    <!-- IDIOMAS -->
+                    <div>
+                        <ul class="language-list">
+                            <h4 class="iceberg" data-i18n-key="idiomas">Idiomas</h4>
+                            <div class="idioma-module">
+                                <li>Catalá</li>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="idioma-module">
+                                <li>Español</li>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="idioma-module">
+                                <li>Ingles</li>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="idioma-module">
+                                <li>Italiano</li>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="polyPrueva" id="spacer2"></div>
+
+                <!-- Información 2 -->
+                <div class="info-2">
+                    <div class="info-2-content" id="item-container">
+                        <!-- Formación -->
+                        <h4 class="iceberg" data-i18n-key="formacion">Formación:</h4>
+                        <div class="formacion-skills">
+                            <ul>
+                                <li class="mb-4"><a href="img/cert/React-AspNet-certificado.pdf" target="_blank" style="text-decoration: underline;">React 19 / ASP.NET core 9</a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>sep. 2025 - oct. 2025</h6>
+                                </li>
+
+                                <li class="mb-4"><a href="img/cert/Git-GitHub-Certificado.pdf" target="_blank" style="text-decoration: underline;">Especialización GIT / GitHub</a><br>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>ago. 2025 - ago. 2025</h6>
+                                </li>
+
+                                <li class="mb-4"><a href="img/cert/CSS-Certificado.pdf" target="_blank" style="text-decoration: underline;">Maestria CSS</a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>abr. 2025 - jul. 2025</h6>
+                                </li>
+
+                                <li class="mb-4"><a href="img/cert/JStotal.pdf" target="_blank" style="text-decoration: underline;"> JavaScript TOTAL</a>
+                                <h5 class="h5-form">Udemy</h5>
+                                <h6>jul. 2025 - abr. 2025</h6>
+                                </li>
+                                <li><a href="#">CFGM: Sistemas informaticos y redes </a>
+                                <h5 class="h5-form">Instituto Pla de L'estany</h5>
+                                <h6>2019 - ago. 2022</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Lista Skills-->
+                        <h4 class="iceberg" data-i18n-key="competencias">Competencias:</h4>
+                        <div class="formacion-skills">
+                            <ul>
+                                <li>CSS
+                                    <ul>
+                                        <li class="sub">SASS</li>
+                                        <li class="sub">Bootstrap</li>
+                                    </ul>
+                                </li>
+                                <li>HTML
+                                    <ul>
+                                        <li class="sub">(POO) Programación orientada a objetos</li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.udemy.com/course/javascript-total/?couponCode=MT260825G1">JavaScript</a>
+                                    <ul>
+                                        <li class="sub">TypeSctript</li>
+                                        <li class="sub">Node.js</li>
+                                        <li class="sub">React</li>
+                                        <li class="sub">Angular</li>
+                                        <li class="sub">JSON</li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <ul>GitHub
+                                        <li>GIT</li>
+                                        <li>GitHub Pages</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <!-- Menú Sociales -->
+        <div class="footer-perso" >
+            <div class="footer-container" >
+
+                <div class="botones-contacto">
+                    <p class="ms-3" onclick="contacto()">
+                        <a href="" class="fa-solid fa-user">
+                        </a>
+                        <span data-i18n-key="contacto" id="info-contacto">
+                            Contacto
+                        </span>
+                    </p>
+
+                    <p onclick="contacto2()">
+                        <a href="" class="fa-solid fa-info">
+                        </a>
+                        <span data-i18n-key="experiencia" id="info-contacto-2">
+                            Experiencia
+                        </span>
+                    </p>
+                </div>
+
+                <div class="sociales-contacto">
+                    <p class="fa-brands fa-linkedin me-2">
+                        <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" ></a>
+                    </p>
+                    <p class="fa-brands fa-github me-2">
+                        <a href="https://github.com/Alexproxxl"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--SECONDARY CARDS-->
+    <div class="overlay" id="overlay">
+        <!-- Contacto - Desplegable -->
+        <div class="card-contacto modal" id="card-contacto">
+            <div class="content" id="box-desplegable-contacto">
+
+                <div class="cards-header">
+                    <h2 data-i18n-key="contacto-desplegable-titulo" >Contacto</h2>
+                    <div class="spacer"></div>
+                </div>
+
+                
+                <div class="content-container">
+                    <div class="contacto-item-container">
+                        <h4 data-i18n-key="telefono"></h4>
+                        <h5>664872270</h5>
+                    </div>
+                   
+                    <div class="contacto-item-container">
+                        <span class="fa-solid fa-envelope icono-contacto-desplegable"></span>
+                        <h4>Email:</h4>
+                        <h5 class="mb-1">alexkuadradomaso2003@gmail.com</h5>
+                    </div>
+                    
+                    <div class="contacto-item-container">
+                        <span class="fa-solid fa-location-dot icono-contacto-desplegable"></span>
+                        <h4 data-i18n-key="localidad"></h4>
+                        <h5 data-i18n-key="localidad-descripcion"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formación - Desplegable -->
+        <div class="card-experiencia modal" id="card-contacto2">
+            <div class="content" id="box-desplegable-experiencia">
+                <div class="cards-header">
+                    <h2 class="iceberg" data-i18n-key="experiencia">Experiencia</h2>
+                    <div class="spacer" id="spacer1"></div>
+                </div>
+                <div class="mt-4" style="overflow: auto; width: 100%; padding-left: 5%;">
+                    <!-- SIIConcatel -->
+                    <h4 data-i18n-key="experiencia-titulo-1">Titulo</h4>
+                    <h5 data-i18n-key="experiencia-horario-1">Horario</h5>
+                    <!--HARDCODED!!!-->
+                    <h6>2022 - 2023</h6>
+                    <br>
+                    <p data-i18n-key="experiencia-descripcion-1">Descripcion Basica</p>
+                    <ul>
+                        <li data-i18n-key="experiencia-descripcion-li-1">- Dato</li>
+                        <li data-i18n-key="experiencia-descripcion-li-2">- Dato
+                        </li>
+                        <li data-i18n-key="experiencia-descripcion-li-3">- Dato
+                        </li>
+                    </ul>
+                    <br><br>
+
+                    <!-- PRACTICAS DE EMPRESA FCT -->
+                    <h4 data-i18n-key="experiencia-titulo-2">Titulo</h4>
+                    <h5 data-i18n-key="experiencia-horario-2">Horario</h5>
+                    <!-- !!!hardcoded -->
+                    <h6>2021 - 2022</h6>
+                    <br>
+                    <p data-i18n-key="experiencia-descripcion-2">Descripcion Basica</p>
+                    <ul class="mb-5">
+                        <!-- Información especifica -->
+                        <li data-i18n-key="experiencia-descripcion-li-2-1">- Dato</li>
+                        <li data-i18n-key="experiencia-descripcion-li-2-2">- Dato</li>
+                        <li data-i18n-key="experiencia-descripcion-li-2-3">- Dato</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/idiomas.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/botones-contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

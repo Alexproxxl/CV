@@ -56,7 +56,8 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b, strong {
@@ -108,7 +109,8 @@ button, select {
 
 button, [type=button], [type=reset], [type=submit] {
   -webkit-appearance: button;
-  appearance: button;
+  -moz-appearance: button;
+       appearance: button;
 }
 
 button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
@@ -151,7 +153,9 @@ textarea {
 }
 
 [type=search] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -190,15 +194,45 @@ template {
 /* ===============
     * Estilos Generales *
 =============== */
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
+  color: rgb(var(--text-light));
+  height: 100vh;
+  width: 100%;
+  background: rgb(var(--fondo-light-1));
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+a, span {
+  color: var(--iconos-light);
+  text-decoration: none;
+}
+
+li {
+  padding-top: 15px;
+  padding-left: 10px;
+  list-style: none;
+  line-height: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 !important;
 }
 
 .container {
@@ -2619,28 +2653,215 @@ form * input:focus {
   background: rgb(84.3605150215, 91.3905579399, 97.6394849785);
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 1s;
+}
+.overlay .modal {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  max-width: 50% !important;
+  max-height: 80% !important;
+  left: 50%;
+  top: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+.overlay .modal .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid var(--border-light);
+  background-color: rgba(var(--fondo-dark-2), 0.6);
+  z-index: 3;
+}
+.overlay .modal .content h4 {
+  font-size: 30px;
+}
+.overlay .modal .content .cards-header {
+  width: 100%;
+  height: 170px !important;
+  min-height: 170px !important;
+  position: relative;
+}
+.overlay .modal .content .cards-header h2 {
+  text-align: center;
+  font-size: 90px;
+  font-family: "iceberg";
+}
+.overlay .modal .content .cards-header .spacer {
+  display: block;
+}
+.overlay .modal.card-contacto .content .content-container {
+  overflow: auto;
+  width: 100%;
+  height: calc(100% - 170px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay .modal.card-contacto .content .content-container .contacto-item-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 30px 0;
+}
+.overlay .modal.card-contacto .content .content-container .contacto-item-container span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.overlay .modal.card-experiencia .content {
+  font-weight: 200;
+}
+.overlay .modal.card-experiencia .main {
+  filter: blur(15px);
+}
+
+.footer-perso {
+  display: none;
+  margin: 0;
+}
+.footer-perso .footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer-perso .footer-container .sociales-contacto, .footer-perso .footer-container .botones-contacto {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.footer-perso .footer-container .sociales-contacto p, .footer-perso .footer-container .botones-contacto p {
+  font-size: 25px;
+  cursor: pointer;
+}
+.footer-perso .footer-container .botones-contacto {
+  justify-content: start;
+  width: 90%;
+}
+.footer-perso .footer-container .sociales-contacto {
+  justify-content: end;
+  width: 30%;
+}
+
+.header-main {
+  height: 100%;
+  position: relative;
+}
+.header-main .header-movil {
+  padding-top: 3%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-main .header-movil .img-container {
+  height: 100%;
+  width: 20% !important;
+  z-index: 1 !important;
+}
+.header-main .header-movil .img-container img {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.header-main .header-movil .img-container .submenu {
+  display: none;
+  position: absolute;
+}
+.header-main .header-movil .img-container .dropdown-submenu:hover .submenu {
+  display: block;
+}
+.header-main .header-movil .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-main .header-movil .desplegable-top {
+  width: 20% !important;
+  order: 1;
+}
+.header-main .header-movil .desplegable-top nav {
+  position: relative;
+}
+.header-main .header-movil .desplegable-top nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.header-main .header-movil .desplegable-top nav ul li #boton-tema {
+  background: none;
+  border: none;
+}
+.header-main .spacer {
+  z-index: 0;
+}
+
 .icono-contacto-desplegable {
   font-size: 35px;
 }
 
-body {
-  color: rgb(var(--text-light));
-  height: 100vh;
+.container-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: auto;
+  padding-top: 3;
+}
+.container-info .info {
+  width: 49%;
+  display: none;
+  padding-left: 10px;
+}
+.container-info .info .language-list {
+  text-align: start;
+}
+.container-info .info .language-list .idioma-module {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-info .info .language-list .idioma-module .progress {
+  width: 70%;
+}
+.container-info .info-2 {
+  display: none;
+  width: 49%;
+  padding-right: 10px;
+}
+.container-info .info-2 .info-2-content {
+  height: 100%;
+}
+.container-info .info-2 .info-2-content .formacion-skills {
+  overflow: auto;
+  max-height: 40%;
+  border: 1px solid #333333;
   width: 100%;
-  background: rgb(var(--fondo-light-1));
+  margin-top: 20px;
 }
 
-.img-container {
-  position: relative;
-  width: 100%;
-}
-.img-container img {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  background-position: center;
-  border-radius: 50%;
+.sub {
+  padding-left: 30px;
 }
 
 .main {
@@ -2662,8 +2883,7 @@ body {
   display: block !important;
 }
 .main.expand .header-main {
-  position: relative;
-  height: 30% !important;
+  height: 25% !important;
 }
 .main.expand .header-main .spacer {
   display: block;
@@ -2675,42 +2895,22 @@ body {
   height: 10% !important;
 }
 
-.footer-perso {
-  display: none;
-  margin: 0 !important;
-}
-.footer-perso div a, .footer-perso div span {
-  height: 100%;
-  width: 50px;
-  font-size: 40px;
-}
-.footer-perso span {
-  cursor: pointer;
-}
-
-.card-contacto {
+.spacer {
+  clip-path: polygon(0 0, 5% 37%, 10% 55%, 15% 63%, 22% 59%, 28% 50%, 34% 38%, 40% 20%, 43% 0, 50% 0, 57% 0, 60% 20%, 66% 38%, 72% 50%, 78% 59%, 85% 63%, 90% 55%, 95% 37%, 100% 0, 98% 33%, 94% 64%, 87% 80%, 82% 84%, 75% 78%, 69% 73%, 60% 58%, 54% 40%, 46% 40%, 40% 58%, 31% 73%, 25% 79%, 18% 84%, 13% 81%, 6% 64%, 2% 33%);
+  height: 60px;
+  width: 90%;
   position: absolute;
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-.card-contacto .content {
-  position: relative;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 85% !important;
-  width: 50%;
-  border-radius: 25px;
-  border: 2px solid var(--border-light);
-  background: rgba(var(--fondo-light-2), 0.6);
-  z-index: 3;
-}
-.card-contacto .main {
-  filter: blur(15px);
+  transform: translate(-50%);
+  z-index: 0;
+  display: none;
+  background: var(--text-light);
 }
 
-/*# sourceMappingURL=framework.css.map */
+.polyPrueva {
+  height: 100%;
+  width: 4%;
+  clip-path: polygon(50% 0, 62% 13%, 62% 87%, 50% 100%, 36% 87%, 36% 13%);
+  background: var(--text-light);
+}

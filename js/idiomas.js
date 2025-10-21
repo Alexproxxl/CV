@@ -19,7 +19,6 @@ async function setLocale(newLocale) {
   locale = newLocale;
   translations = newTranslations;
   translatePage();
-  console.log("Me cago en mis muertos-1");
 }
 // Retrieve translations JSON object for the given
 // locale over the network
@@ -35,7 +34,6 @@ function translatePage() {
   document
     .querySelectorAll("[data-i18n-key]")
     .forEach(translateElement);
-    console.log("Me cago en mis muertos2");
 }
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
@@ -44,7 +42,6 @@ function translateElement(element) {
   const key = element.getAttribute("data-i18n-key");
   const translation = translations[key];
   element.innerHTML = translation;
-  console.log(translation);
 }
 function bindLocaleSwitcher(initialValue) {
   const switcher =
@@ -53,9 +50,6 @@ function bindLocaleSwitcher(initialValue) {
   switcher.onchange = (e) => {
     // Set the locale to the selected option[value]
     setLocale(e.target.value);
-    console.log("algo nuevo?");
 
   };
-  console.log("algo nuevo?");
-
 }
