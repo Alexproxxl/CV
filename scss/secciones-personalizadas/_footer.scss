@@ -1,0 +1,32 @@
+.footer-perso{
+    display: none;
+    margin: 0;
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        %base-contacto{
+            display: flex;
+            align-items: center;
+            position: relative;
+            p{
+                font-size: 25px;
+                cursor: pointer;
+            }
+            
+        }
+        .botones-contacto{
+            @extend %base-contacto;
+            justify-content: start;
+            width: 90%
+        }
+
+        .sociales-contacto{
+           @extend %base-contacto;
+           justify-content: end;
+           width: 30%;
+        }
+    }
+}

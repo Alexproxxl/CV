@@ -1,0 +1,49 @@
+.container-info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: auto;
+    //En caso de error, es esto 100%
+    padding-top: 3;
+
+    .info{
+        width: 49%;
+        display: none;
+        padding-left: 10px;
+
+        .language-list{
+            text-align: start;
+            .idioma-module{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .progress{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .info-2{
+        display: none;
+        width: 49%;
+        padding-right: 10px;
+        .info-2-content{
+            height: 100%;
+            
+            .formacion-skills{
+                overflow: auto;
+                max-height: 40%;
+                border: 1px solid #333333;
+                width: 100%; margin-top: 20px;
+            }
+        }
+
+    }
+
+}
+
+
+.sub{
+    padding-left: 30px;
+}

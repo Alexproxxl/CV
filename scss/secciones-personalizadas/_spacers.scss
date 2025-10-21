@@ -1,0 +1,18 @@
+.spacer{
+    clip-path: polygon(0 0, 5% 37%, 10% 55%, 15% 63%, 22% 59%, 28% 50%, 34% 38%, 40% 20%, 43% 0, 50% 0, 57% 0, 60% 20%, 66% 38%, 72% 50%, 78% 59%, 85% 63%, 90% 55%, 95% 37%, 100% 0, 98% 33%, 94% 64%, 87% 80%, 82% 84%, 75% 78%, 69% 73%, 60% 58%, 54% 40%, 46% 40%, 40% 58%, 31% 73%, 25% 79%, 18% 84%, 13% 81%, 6% 64%, 2% 33%);
+    height: 60px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0 ;
+    display: none;
+    background: var(--text-light);
+}
+
+.polyPrueva{
+    height: 100%; width: 4%;
+    clip-path: polygon(50% 0, 62% 13%, 62% 87%, 50% 100%, 36% 87%, 36% 13%);
+    background: var(--text-light);
+}

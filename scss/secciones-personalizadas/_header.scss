@@ -1,0 +1,63 @@
+.header-main{
+    height: 100%;
+    position: relative;
+    .header-movil{
+        padding-top: 3%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        .img-container{
+            height: 100%;
+            width: 20% !important;
+            z-index: 1 !important;
+            img{
+                position: absolute;
+                height: 110px;
+                width: 110px;
+                object-fit: cover;
+                background-position: center;
+                border-radius: 50%;
+            }
+            .submenu{
+                display: none;
+                position: absolute;
+            }
+            
+            .dropdown-submenu:hover .submenu{
+                display: block;
+            }
+        }
+
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        .desplegable-top{
+            width: 20% !important;
+            order: 1;
+            nav{
+                position: relative;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    
+                    li{
+                        #boton-tema{
+                            background: none; border: none;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .spacer{
+        z-index: 0;
+    }
+    
+}

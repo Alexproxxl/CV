@@ -1,12 +1,8 @@
 // GlOBALES
-
 @import 'global/variables';
 @import 'global/fonts';
 @import 'global/normalize';
 @import 'global/mediaquery';
-//el error no deja pasar de esta parte de codigo, posible error de sintaxis en las variables
-
-
 
 //SECTIONS
 @import 'sections/generales';
@@ -18,104 +14,11 @@
 @import 'sections/componentes';
 
 //Estilos personalizados
+@import 'secciones-personalizadas/cards-secundarias';
+@import 'secciones-personalizadas/footer';
+@import 'secciones-personalizadas/header';
 @import 'secciones-personalizadas/iconos';
+@import 'secciones-personalizadas/informacion';
+@import 'secciones-personalizadas/main';
+@import 'secciones-personalizadas/spacers';
 
-body{
-    color: rgb(var(--text-light));
-    height: 100vh; 
-    width: 100%;
-    background: rgb(var(--fondo-light-1));
-}
-
-.img-container{
-    position: relative;
-    width: 100%;
-    img{
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        object-fit: cover;
-        background-position: center;
-        border-radius: 50%;
-    }
-}
-.main{
-    height: 20%;
-    width: 35% ;
-    background: var(--fondo-light-2);
-    transition: all .5s;
-
-}
-.main.expand{   
-    height: 85%;
-    min-width: 50% !important;
-    background: var(--fondo-light-2);
-
-    *.info, .info-2{
-        display: block !important;
-    }
-    *.footer-perso{
-        display: block !important;
-    }
-
-    .header-main{
-        position: relative;
-        height: 30% !important;
-
-        .spacer{
-            display: block;
-        }          
-    }
-
-    .container-info{
-        height: 65% !important;
-    }
-
-    .footer-perso{
-        height: 10% !important;
-    }
-}
-
-.footer-perso{
-    display: none;
-    margin: 0 !important;
-    div{        
-        a, span{
-            height: 100%;
-            width: 50px;
-            
-            font-size: 40px;
-        }
-    }
-
-    span{
-        cursor: pointer;
-    }
-}
-
-.card-contacto{
-    position: absolute;
-    display: none;
-    height: 100%;
-    width: 100%;
-    
-    .content{
-        position: relative;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex; flex-direction: column; align-items: center;
-        height: 85% !important; width: 50%;
-
-        border-radius: 25px; border: 2px solid var(--border-light);
-
-        background: rgba(var(--fondo-light-2), 0.6);
-        z-index: 3;
-    
-    }
-
-    .main{
-        filter: blur(15px);
-    }
-
-    
-}
