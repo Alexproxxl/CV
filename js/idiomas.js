@@ -23,7 +23,7 @@ async function setLocale(newLocale) {
 // Retrieve translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`/json/${newLocale}.json`);
+  const response = await fetch(`/CV/json/${newLocale}.json`);
   console.log(newLocale);
   return await response.json();
 }
