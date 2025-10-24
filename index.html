@@ -17,17 +17,17 @@
    
 </head>
 
-<body class="color-white flex items-center jcontent-center" id="body">
+<body id="body">
     <!--MAIN CARD-->
-    <div class="main w-sm-90 flex" style="flex-direction: column;" id="card-general">
+    <div class="main" id="card-general">
         
         <!-- HEADER / INICIO -->
-        <div class="header-main" style="position: relative;">
+        <div class="header-main">
 
             <!-- Imagen -->
             <div class="header-movil">
                 <div class="img-container" style="width: 25%; transition: all 2s;">
-                    <img id="foto" src="img/foto-light.jpg" alt="" style="z-index: 1;">
+                    <img id="foto" src="CV/img/foto-light.jpg" alt="" style="z-index: 1;">
                 </div>
                 <!-- Nombre / Formación -->
                 <div class="title-container titulo">
@@ -81,25 +81,25 @@
                         <ul class="language-list">
                             <h4 class="iceberg" data-i18n-key="idiomas">Idiomas</h4>
                             <div class="idioma-module">
-                                <li>Catalá</li>
+                                <li data-i18n-key="lang-1">Catalá</li>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="idioma-module">
-                                <li>Español</li>
+                                <li data-i18n-key="lang-2">Español</li>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 100%;"></div>
                                 </div>
                             </div>
                             <div class="idioma-module">
-                                <li>Ingles</li>
+                                <li data-i18n-key="lang-3">Ingles</li>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 75%;"></div>
                                 </div>
                             </div>
                             <div class="idioma-module">
-                                <li>Italiano</li>
+                                <li data-i18n-key="lang-4">Italiano</li>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 20%;"></div>
                                 </div>
@@ -202,12 +202,8 @@
                 </div>
 
                 <div class="sociales-contacto">
-                    <p class="fa-brands fa-linkedin me-2">
-                        <a href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" ></a>
-                    </p>
-                    <p class="fa-brands fa-github me-2">
-                        <a href="https://github.com/Alexproxxl"></a>
-                    </p>
+                    <a class="fa-brands fa-linkedin me-2" href="https://www.linkedin.com/in/%C3%A0lex-cuadrado-mas%C3%B3-b37683250/" ></a>
+                    <a class="fa-brands fa-github me-2" href="https://github.com/Alexproxxl"></a>
                 </div>
             </div>
         </div>
@@ -224,7 +220,7 @@
 
                 <div class="cards-header">
                     <h2 data-i18n-key="contacto-desplegable-titulo" >Contacto</h2>
-                    <div class="spacer"></div>
+                    <div class="spacer" id="spacer3"></div>
                 </div>
 
                 
@@ -253,7 +249,7 @@
             <div class="content" id="box-desplegable-experiencia">
                 <div class="cards-header">
                     <h2 class="iceberg" data-i18n-key="experiencia">Experiencia</h2>
-                    <div class="spacer" id="spacer1"></div>
+                    <div class="spacer" id="spacer4"></div>
                 </div>
                 <div class="mt-4" style="overflow: auto; width: 100%; padding-left: 5%;">
                     <!-- SIIConcatel -->
@@ -290,9 +286,9 @@
         </div>
     </div>
 
-    <script src="js/idiomas.js"></script>
-    <script type="module" src="js/script.js"></script>
-    <script src="js/botones-contacto.js"></script>
+    <script src="CV/js/idiomas.js"></script>
+    <script type="module" src="CV/js/script.js"></script>
+    <script src="CV/js/botones-contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
