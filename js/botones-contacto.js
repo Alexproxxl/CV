@@ -29,4 +29,10 @@ const main = document.querySelector(".main");
 
   main.addEventListener("mouseenter", () => {
     main.classList.add("expand"); 
+
+    /*
+    intentar hacer un if (la resolucion es < 720px){
+      main.classList.add("expand");
+    }
+    */
   });

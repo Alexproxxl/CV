@@ -1,9 +1,14 @@
 //Menu Header
 
 import CambiarFoto from "./canvio-img.js"
+import checkResolution from "./responsive.js";
 
 const boton = document.getElementById("boton-tema");
 const caja = document.getElementById("icono-tema");
+
+checkResolution();
+
+window.addEventListener("resize", checkResolution);
 
 boton.addEventListener("click", () => {
   const main = document.getElementById("card-general");
@@ -14,6 +19,8 @@ boton.addEventListener("click", () => {
   const desplegableContacto = document.getElementById("box-desplegable-contacto");
   const spacer1 = document.getElementById("spacer1");
   const spacer2 = document.getElementById("spacer2");
+  const spacer3 = document.getElementById("spacer3");
+  const spacer4 = document.getElementById("spacer4");
   const foto = document.getElementById("foto");
  
   // Cambiar de 'rojo' a 'verde' y viceversa
@@ -32,6 +39,9 @@ boton.addEventListener("click", () => {
       /*Spacer*/
       spacer1.style.background = 'var(--text-dark)';
       spacer2.style.background = 'var(--text-dark)';
+      spacer3.style.background = 'var(--text-dark)';
+      spacer4.style.background = 'var(--text-dark)';
+
       /* Iconos*/
       document.querySelectorAll("a").forEach(a => {a.style.color = "var(--iconos-dark)";});
       document.querySelectorAll("span").forEach(span => {span.style.color = "var(--iconos-dark)";});
@@ -59,6 +69,8 @@ boton.addEventListener("click", () => {
     //Spacers
     spacer1.style.background = 'var(--text-light)';
     spacer2.style.background = 'var(--text-light)';
+    spacer3.style.background = 'var(--text-light)';
+    spacer4.style.background = 'var(--text-light)';
 
     //Seleciona y establece color light a todos los "a"
     document.querySelectorAll("a").forEach(a => {a.style.color = "var(--iconos-light)";});

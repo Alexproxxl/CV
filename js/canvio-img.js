@@ -21,10 +21,9 @@ export default function CambiarFoto(img) {
 
   if (src.includes("light")) {
     img.setAttribute("src", "img/foto-dark.jpg");
-    console.log("→ cambiado a foto-dark.jpg");
+
   } else if (src.includes("dark")) {
     img.setAttribute("src", "img/foto-light.jpg");
-    console.log("→ cambiado a foto-light.jpg");
   } else {
     console.warn("El nombre del archivo no contiene 'light' ni 'dark'");
   }
