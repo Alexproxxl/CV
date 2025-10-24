@@ -1,3 +1,5 @@
+
+
 .header-main{
     height: 100%;
     position: relative;
@@ -8,8 +10,8 @@
         justify-content: space-around;
         .img-container{
             height: 100%;
-            width: 20% !important;
-            z-index: 1 !important;
+            width: 20%;
+            z-index: 1;
             img{
                 position: absolute;
                 height: 110px;
@@ -17,6 +19,7 @@
                 object-fit: cover;
                 background-position: center;
                 border-radius: 50%;
+                
             }
             .submenu{
                 display: none;
@@ -36,7 +39,7 @@
         }
 
         .desplegable-top{
-            width: 20% !important;
+            width: 20%;
             order: 1;
             nav{
                 position: relative;

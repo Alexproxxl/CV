@@ -9,7 +9,7 @@
     .modal {
         position: relative;
         width: 50%; height: 80%;
-        max-width: 50% !important; max-height: 80% !important;
+        max-width: 50%; max-height: 80%;
         left: 50%; top: 50%;
         display: none;
         transform: translate(-50%, -50%);
@@ -29,8 +29,8 @@
             }
             .cards-header{
                     width: 100%;
-                    height: 170px !important;
-                    min-height: 170px !important;
+                    height: 170px;
+                    min-height: 170px;
                     position: relative;
                     h2{
                         text-align: center;
@@ -76,8 +76,7 @@
         &.card-experiencia{
             .content{
                 font-weight: 200;
-                li{
-                }
+                
             }
             .main{
                 filter: blur(15px);

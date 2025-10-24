@@ -4,6 +4,8 @@
 @import 'global/normalize';
 @import 'global/mediaquery';
 
+
+
 //SECTIONS
 @import 'sections/generales';
 @import 'sections/texto';
@@ -21,4 +23,14 @@
 @import 'secciones-personalizadas/informacion';
 @import 'secciones-personalizadas/main';
 @import 'secciones-personalizadas/spacers';
+
+//Boques modelo responsive
+
+
+
+@import 'modelosResponsive/resoluciones-amasijo.scss';
+@import 'modelosResponsive/1228px';
+@import 'modelosResponsive/720px';
+@import 'modelosResponsive/375px';
+
 

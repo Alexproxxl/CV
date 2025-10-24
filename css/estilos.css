@@ -13,12 +13,12 @@
 }
 
 .progress-bar{
-    background: gray !important;
+    background: gray;
 }
 
 .h5-form{
-    font-size: 16px !important;
-    text-decoration: bold !important;
+    font-size: 16px;
+    text-decoration: bold;
 }
 
 /* Footer */
@@ -38,127 +38,3 @@
     background: var(--fondo-light-modal);
 }
 
-@media screen and (max-width: 1604px){
-    
-
-    .main:hover{
-        width: 51%;
-    }
-}
-
-
-@media screen and (max-width: 1584px){
-    .main{
-        width: 50% !important;
-    }
-}
-
-@media screen and (max-width: 1228px){
-    
-    .main{
-        width: 60% !important;
-    }
-
-    .main.expand{
-        width: 75% !important;
-        height: 90% ;
-    }
-    
-    .info-2-content{
-        margin: none;
-        width: 100% !important;
-    }
-
-
-    .content{
-        width: 60% !important;
-    }
-}
-
-
-@media screen and (max-width: 800px){
-    .main{
-        width: 80% !important;
-    }
-    
-    .main:hover{
-        width: 90% !important;
-        height: 95%;
-    }
-
-    .content{
-        width: 90% !important;
-    }
-    
-}
-
-@media screen and (max-width: 540px){
-    body{
-        position: absolute;
-        height: 100vh !important; 
-    }
-    .progress{
-        width: 50% !important;        
-    }
-    
-    .main{
-        position: relative !important;
-        height: 100% !important;
-        width: 100vh !important;
-        padding: 3px;
-    }
-
-    .main:hover {
-    position: relative !important;
-        height: 100% !important;
-        width: 100vh !important;
-        padding: 3px;
-  }
-    .sobremi{
-        display: none;
-    }
-
-    
-
-    *.info, .info-2{
-        display: block !important;
-    }
-    *.footer-perso{
-        display: block !important;
-    }
-    /* ---- HEADER ---- */
-    .header-main{
-        flex-direction: column;
-    }
-
-    
-
-    .img-container{
-        order: 2;
-        width: 50%;
-        height: 50%;
-    }
-    .titulo{
-        order: 3;
-        width: 50%;
-        height: 50%;
-    }
-
-    .header-movil{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 70%;
-    }
-
-    .spacer{
-        display: none;
-    }
-
-    /* ---- FOOTER ---- */
-   
-}

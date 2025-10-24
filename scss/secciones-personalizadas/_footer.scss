@@ -20,13 +20,15 @@
         .botones-contacto{
             @extend %base-contacto;
             justify-content: start;
-            width: 90%
+            width: 90%;
+            font-size: 30px;
         }
 
         .sociales-contacto{
            @extend %base-contacto;
            justify-content: end;
            width: 30%;
+           font-size: 30px;
         }
     }
 }
