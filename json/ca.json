@@ -1,37 +1,45 @@
 {
     "sobre-mi": "Sobre mí:",
-    "sobre-mi-descripcion": "Hola <i class='fa-regular fa-handshake'></i>, Soy Àlex, empezé en el mundo laboral como tecnico informático (2 años de experiencia) y este año he decidido dar el salto al <strong>desarrollo web!!!</strong> <br><br> Estudios orientados al <strong>Frontend</strong> y conocimientos medios de <strong>Backend</strong>. <br><br> Experiencia <strong>trabajando en equipo</strong>. <br> Pasión por el <strong>aprendizaje</strong> y la <strong>autosuperación</strong>. ",
-    "idiomas": "Idiomas:",
-    "formacion": "Formación:",
-    "competencias": "Competencias:",
-    "contacto": "Contacto",
-    "experiencia": "Experiencia",
+    "sobre-mi-descripcion": "Hola <i class='fa-regular fa-handshake'></i>, Soc l'Àlex, vaig començar al mon laboral com a tecnic informátic (2 anys d'experiéncia) i aquest any he decidit donar el salt al <strong>Desenvolupament Web</strong> <br><br> Estudis orientats majoritariament a <strong>Frontend</strong> y coneixaments mitjans de <strong>Backend</strong>. <br><br> Experiencia <strong>trabajando en equipo</strong>. <br> Pasió per <strong>l'aprenentatge</strong> i <strong>l'autosuperació</strong>. ",
 
 
-    "experiencia-titulo-1": "SIIConcatel (Subcontratado en Fujitsu)",
-    "experiencia-horario-1": "Horario: 8:00 -> 17:00",
-    "experiencia-descripcion-1": "<b>Técnico de proximidad</b> el la sanidad pública, provincia de Girona.",
-    "experiencia-descripcion-li-1":"- Mantenimiento de equipos informaticos (tanto hardware como software especifico).",
-    "experiencia-descripcion-li-2":"- Mantenimiento de redes (Raks, ethernet, configuracion IPs, etc...).",
-    "experiencia-descripcion-li-3":"- Recepción, derivación y <b> resolución de tikets </b>/ incidencias",
+    "idiomas": "Idiomes:",
+    "lang-1": "Catalá",
+    "lang-2": "Castella",
+    "lang-3": "Anglés",
+    "lang-4": "Italiá",
+
+
+    "formacion": "Formació:",
+    "competencias": "Competencies:",
+    "contacto": "Contacte",
+    "experiencia": "Experiéncia",
+
+
+    "experiencia-titulo-1": "SIIConcatel (Sub-contractat a Fujitsu)",
+    "experiencia-horario-1": "Horari: 8:00 -> 17:00",
+    "experiencia-descripcion-1": "<b>Técnic de proximitat</b> a la sanitat pública, provincia de Girona.",
+    "experiencia-descripcion-li-1":"- Manteniment d'equips informatics (tant hardware com software especific).",
+    "experiencia-descripcion-li-2":"- Manteniment de xarxes (Raks, ethernet, configuració IPs, etc...).",
+    "experiencia-descripcion-li-3":"- Recepció, derivació y <b> resolució de tikets </b>/ incidencies",
 
     "experiencia-titulo-2": "Practicas de empresa FCT",
     "experiencia-subtitulo-2": "Tecnigi (Girona)",
     "experiencia-horario-2": "9:00 -> 13:00 /.../ 18:00 -> 21:00",
-    "experiencia-descripcion-2": "Experiencia en manipulación y reparación de equipos informáticos.",
+    "experiencia-descripcion-2": "Experiencia en manipulació y reparació d'equipos informátics.",
 
-    "experiencia-descripcion-li-2-1": "- Reparación de equipos electronicos variados (PC, movil, consolas, etc...).",
-    "experiencia-descripcion-li-2-2": "- Mantenimiento de software (incompatibilidades, fallas de seguridad, gestion de malware, recuperación de datos, etc...).",
-    "experiencia-descripcion-li-2-3": "- Gestión de tiendas (ventas, stock, Gestión basica de cuentas...).",
-
-
+    "experiencia-descripcion-li-2-1": "- Reparació d'equips electronics variats (PC, movil, consoles, etc...).",
+    "experiencia-descripcion-li-2-2": "- Mantenimient de software (incompatibilitats, falles de seguretat, gestió de malware, recuperació de dades, etc...).",
+    "experiencia-descripcion-li-2-3": "- Gestió de botigues (ventes, stock, gestió basica de comptes...).",
 
 
 
 
 
-    "contacto-desplegable-titulo":"Contacto",
-    "telefono": "<span style='position: absolute; left: 0;' class='fa-solid fa-phone icono-contacto-desplegable'></span>Telefono:",
-    "localidad": "Localidad:",
-    "localidad-descripcion": "Girona, Cataluña, España"
+
+
+    "contacto-desplegable-titulo":"Contacte",
+    "telefono": "<span style='position: absolute; left: 0;' class='fa-solid fa-phone icono-contacto-desplegable'></span>Teléfon:",
+    "localidad": "Localitat:",
+    "localidad-descripcion": "Girona, Catalunya, Espanya"
 }

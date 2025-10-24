@@ -1,7 +1,15 @@
 {
     "sobre-mi": "About me:",
-    "sobre-mi-descripcion": "Hi!! <i class='fa-regular fa-handshake'></i>, I'm Àlex, <br> I've started working as IT (2 years of experience) and this year i've decided to jump in to <strong>Web Development!!!</strong> <br><br> Studies based on <strong>Frontend</strong> and intermediate <strong>Backend</strong> skill level. <br><br> Experience in <strong>TeamWork</strong>.<br> Passion for <strong>lerning</strong> and <strong>self inprovement</strong>.",
+    "sobre-mi-descripcion": "Hi!! <i class='fa-regular fa-handshake'></i>, I'm Àlex, <br> I've started working as IT (2 years of experience) and this year i've decided to jump in to <strong>Web Development!!!</strong> <br><br> Studies based on <strong>Frontend</strong> and intermediate <strong>Backend</strong> skill level. <br><br> Experience at <strong>TeamWork</strong>.<br> Passion for <strong>lerning</strong> and <strong>self inprovement</strong>.",
+
+
     "idiomas": "Languages:",
+    "lang-1": "Catalan",
+    "lang-2": "Spanish",
+    "lang-3": "English",
+    "lang-4": "Italian",
+
+
     "formacion": "Formation:",
     "competencias": "Competences:",
     "contacto": "Contact",

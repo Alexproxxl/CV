@@ -1,7 +1,15 @@
 {
     "sobre-mi": "Sobre mí:",
     "sobre-mi-descripcion": "Hola <i class='fa-regular fa-handshake'></i>, Soy Àlex, empezé en el mundo laboral como tecnico informático (2 años de experiencia) y este año he decidido dar el salto al <strong>desarrollo web!!!</strong> <br><br> Estudios orientados al <strong>Frontend</strong> y conocimientos medios de <strong>Backend</strong>. <br><br> Experiencia <strong>trabajando en equipo</strong>. <br> Pasión por el <strong>aprendizaje</strong> y la <strong>autosuperación</strong>. ",
+
+
     "idiomas": "Idiomas:",
+    "lang-1": "Catalan",
+    "lang-2": "Castellano",
+    "lang-3": "Ingles",
+    "lang-4": "Italiano",
+
+
     "formacion": "Formación:",
     "competencias": "Competencias:",
     "contacto": "Contacto",
